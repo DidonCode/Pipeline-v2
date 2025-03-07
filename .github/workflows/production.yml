@@ -1,0 +1,26 @@
+name: PRODUCTION
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonage du dépôt
+        uses: actions/checkout@v3
+
+      - name: Pull Request dev => main
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.TOKEN_GITHUB }}
+          base: dev
+          branch: main
+          title: 'Pull Request dev => main'
+          body: 'Pull request automatique dev => main'
+          draft: false
+          delete-branch: false

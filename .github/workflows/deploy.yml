@@ -1,0 +1,21 @@
+name: DEPLOY
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonage du dépôt
+        uses: actions/checkout@v3
+
+      - name: Build l'app
+        run: ""
+

@@ -1,0 +1,732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=11" />
+		<meta name="generator" content="Doxygen 1.13.2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Butify: Référence de la classe DatabaseLike</title>
+		<link rel="icon" href="logoButifyIcon.png" type="image/x-icon" />
+		<link href="tabs.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="dynsections.js"></script>
+		<script type="text/javascript" src="clipboard.js"></script>
+		<link href="navtree.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="navtreedata.js"></script>
+		<script type="text/javascript" src="navtree.js"></script>
+		<script type="text/javascript" src="resize.js"></script>
+		<script type="text/javascript" src="cookie.js"></script>
+		<link href="search/search.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="search/searchdata.js"></script>
+		<script type="text/javascript" src="search/search.js"></script>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				init_search();
+			});
+			/* @license-end */
+		</script>
+		<link href="doxygen.css" rel="stylesheet" type="text/css" />
+		<link href="doxygen-style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="top">
+			<!-- do not remove this div, it is closed by doxygen! -->
+			<div id="titlearea">
+				<table cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr id="projectrow">
+							<td id="projectlogo">
+								<img alt="Logo" src="logoButify (2).png" />
+							</td>
+							<td id="projectalign">
+								<div id="projectname">Butify</div>
+								<div id="projectbrief">Plateforme de musique</div>
+							</td>
+							<td>
+								<div id="MSearchBox" class="MSearchBoxInactive">
+									<span class="left">
+										<span id="MSearchSelect" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+										<input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" /> </span
+									><span class="right">
+										<a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt="" /></a>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- end header part -->
+			<!-- Généré par Doxygen 1.13.2 -->
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				var searchBox = new SearchBox('searchBox', 'search/', '.html');
+				/* @license-end */
+			</script>
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				$(function () {
+					codefold.init(0);
+				});
+				/* @license-end */
+			</script>
+		</div>
+		<!-- top -->
+		<div id="side-nav" class="ui-resizable side-nav-resizable">
+			<div id="nav-tree">
+				<div id="nav-tree-contents">
+					<div id="nav-sync" class="sync"></div>
+				</div>
+			</div>
+			<div id="splitbar" style="-moz-user-select: none" class="ui-resizable-handle"></div>
+		</div>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				initNavTree('class_database_like.html', '');
+				initResizable(true);
+			});
+			/* @license-end */
+		</script>
+		<div id="doc-content">
+			<!-- window showing the filter options -->
+			<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)"></div>
+
+			<!-- iframe showing the search results (closed by default) -->
+			<div id="MSearchResultsWindow">
+				<div id="MSearchResults">
+					<div class="SRPage">
+						<div id="SRIndex">
+							<div id="SRResults"></div>
+							<div class="SRStatus" id="Loading">Chargement...</div>
+							<div class="SRStatus" id="Searching">Recherche...</div>
+							<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<div class="summary">
+					<a href="#pub-static-methods">Fonctions membres publiques statiques</a>
+				</div>
+				<div class="headertitle">
+					<div class="title">Référence de la classe DatabaseLike</div>
+				</div>
+			</div>
+			<!--header-->
+			<div class="contents">
+				<p>
+					Récupération des likes dans la base de données pour les utilisateurs publics.
+					<a href="#details">Plus de détails...</a>
+				</p>
+				<table class="memberdecls">
+					<tr class="heading">
+						<td colspan="2">
+							<h2 class="groupheader">
+								<a id="pub-static-methods" name="pub-static-methods"></a>
+								Fonctions membres publiques statiques
+							</h2>
+						</td>
+					</tr>
+					<tr class="memitem:a1f375d19d735e3ef47b2f5a2d570aa7f" id="r_a1f375d19d735e3ef47b2f5a2d570aa7f">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a1f375d19d735e3ef47b2f5a2d570aa7f">likedSound</a>
+							($user)
+						</td>
+					</tr>
+					<tr class="memdesc:a1f375d19d735e3ef47b2f5a2d570aa7f">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie les données des musiques aimées par l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:a1f375d19d735e3ef47b2f5a2d570aa7f">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a26baf5bf91718dd52a10b5b19ef39735" id="r_a26baf5bf91718dd52a10b5b19ef39735">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a26baf5bf91718dd52a10b5b19ef39735">likedPlaylist</a>
+							($user)
+						</td>
+					</tr>
+					<tr class="memdesc:a26baf5bf91718dd52a10b5b19ef39735">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie les données des playlists aimées par l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:a26baf5bf91718dd52a10b5b19ef39735">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:ad24c8b52c395c38f3ffdfa54336949f1" id="r_ad24c8b52c395c38f3ffdfa54336949f1">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#ad24c8b52c395c38f3ffdfa54336949f1">likedArtist</a>
+							($user)
+						</td>
+					</tr>
+					<tr class="memdesc:ad24c8b52c395c38f3ffdfa54336949f1">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie les données des artistes aimées par l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:ad24c8b52c395c38f3ffdfa54336949f1">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a0e6dad509a7994e7fd06f6b5b5a8d99e" id="r_a0e6dad509a7994e7fd06f6b5b5a8d99e">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a0e6dad509a7994e7fd06f6b5b5a8d99e">mostListened</a>
+							()
+						</td>
+					</tr>
+					<tr class="memdesc:a0e6dad509a7994e7fd06f6b5b5a8d99e">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">
+							Renvoie les données des musiques les plus écoutées.
+							<br />
+						</td>
+					</tr>
+					<tr class="separator:a0e6dad509a7994e7fd06f6b5b5a8d99e">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a3247f79f30186d3c09e801314e3eacac" id="r_a3247f79f30186d3c09e801314e3eacac">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a3247f79f30186d3c09e801314e3eacac">leastListened</a>
+							()
+						</td>
+					</tr>
+					<tr class="memdesc:a3247f79f30186d3c09e801314e3eacac">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">
+							Renvoie les données des musiques les moins écoutées.
+							<br />
+						</td>
+					</tr>
+					<tr class="separator:a3247f79f30186d3c09e801314e3eacac">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a9efa09b434bf91deca7e0a70bc364d45" id="r_a9efa09b434bf91deca7e0a70bc364d45">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a9efa09b434bf91deca7e0a70bc364d45">mostLikedSound</a>
+							()
+						</td>
+					</tr>
+					<tr class="memdesc:a9efa09b434bf91deca7e0a70bc364d45">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">
+							Renvoie les données des musiques les plus aimées.
+							<br />
+						</td>
+					</tr>
+					<tr class="separator:a9efa09b434bf91deca7e0a70bc364d45">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a126c842115bdb2c1ff8dd92cf6ba1178" id="r_a126c842115bdb2c1ff8dd92cf6ba1178">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a126c842115bdb2c1ff8dd92cf6ba1178">mostLikedPlaylist</a>
+							()
+						</td>
+					</tr>
+					<tr class="memdesc:a126c842115bdb2c1ff8dd92cf6ba1178">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">
+							Renvoie les données des playlists les plus aimées.
+							<br />
+						</td>
+					</tr>
+					<tr class="separator:a126c842115bdb2c1ff8dd92cf6ba1178">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a1ad2f3f4efa0c8f8831b9e146241d536" id="r_a1ad2f3f4efa0c8f8831b9e146241d536">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a1ad2f3f4efa0c8f8831b9e146241d536">leastArtist</a>
+							()
+						</td>
+					</tr>
+					<tr class="memdesc:a1ad2f3f4efa0c8f8831b9e146241d536">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie les données des artistes émergents. <br /></td>
+					</tr>
+					<tr class="separator:a1ad2f3f4efa0c8f8831b9e146241d536">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+				</table>
+				<a name="details" id="details"></a>
+				<h2 class="groupheader">Description détaillée</h2>
+				<div class="textblock">
+					<p>Récupération des likes dans la base de données pour les utilisateurs publics.</p>
+				</div>
+				<h2 class="groupheader">Documentation des fonctions membres</h2>
+				<a id="a1ad2f3f4efa0c8f8831b9e146241d536" name="a1ad2f3f4efa0c8f8831b9e146241d536"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a1ad2f3f4efa0c8f8831b9e146241d536">&#9670;&#160;</a></span
+					>leastArtist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static leastArtist</td>
+											<td>(</td>
+											<td class="paramname">
+												<span class="paramname"><em></em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des artistes émergents.</p>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe artist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a3247f79f30186d3c09e801314e3eacac" name="a3247f79f30186d3c09e801314e3eacac"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a3247f79f30186d3c09e801314e3eacac">&#9670;&#160;</a></span
+					>leastListened()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static leastListened</td>
+											<td>(</td>
+											<td class="paramname">
+												<span class="paramname"><em></em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des musiques les moins écoutées.</p>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe sound sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="ad24c8b52c395c38f3ffdfa54336949f1" name="ad24c8b52c395c38f3ffdfa54336949f1"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#ad24c8b52c395c38f3ffdfa54336949f1">&#9670;&#160;</a></span
+					>likedArtist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static likedArtist</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des artistes aimées par l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Identifiant de l'utilisateur</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe artist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur est en privé</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant d'un artiste n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a26baf5bf91718dd52a10b5b19ef39735" name="a26baf5bf91718dd52a10b5b19ef39735"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a26baf5bf91718dd52a10b5b19ef39735">&#9670;&#160;</a></span
+					>likedPlaylist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static likedPlaylist</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des playlists aimées par l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Identifiant de l'utilisateur</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe playlist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur est en privé</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant d'une la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a1f375d19d735e3ef47b2f5a2d570aa7f" name="a1f375d19d735e3ef47b2f5a2d570aa7f"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a1f375d19d735e3ef47b2f5a2d570aa7f">&#9670;&#160;</a></span
+					>likedSound()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static likedSound</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des musiques aimées par l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Identifiant de l'utilisateur</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe sound sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur est en privé</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant d'une musique n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a126c842115bdb2c1ff8dd92cf6ba1178" name="a126c842115bdb2c1ff8dd92cf6ba1178"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a126c842115bdb2c1ff8dd92cf6ba1178">&#9670;&#160;</a></span
+					>mostLikedPlaylist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static mostLikedPlaylist</td>
+											<td>(</td>
+											<td class="paramname">
+												<span class="paramname"><em></em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des playlists les plus aimées.</p>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe playlist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a9efa09b434bf91deca7e0a70bc364d45" name="a9efa09b434bf91deca7e0a70bc364d45"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a9efa09b434bf91deca7e0a70bc364d45">&#9670;&#160;</a></span
+					>mostLikedSound()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static mostLikedSound</td>
+											<td>(</td>
+											<td class="paramname">
+												<span class="paramname"><em></em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des musiques les plus aimées.</p>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe sound sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a0e6dad509a7994e7fd06f6b5b5a8d99e" name="a0e6dad509a7994e7fd06f6b5b5a8d99e"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a0e6dad509a7994e7fd06f6b5b5a8d99e">&#9670;&#160;</a></span
+					>mostListened()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static mostListened</td>
+											<td>(</td>
+											<td class="paramname">
+												<span class="paramname"><em></em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des musiques les plus écoutées.</p>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe sound sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<hr />
+				La documentation de cette classe a été générée à partir du fichier suivant :
+				<ul>
+					<li>database/<a class="el" href="database_2like_8php.html">like.php</a></li>
+				</ul>
+			</div>
+			<!-- contents -->
+		</div>
+		<!-- doc-content -->
+		<!-- start footer part -->
+		<div id="nav-path" class="navpath">
+			<!-- id is needed for treeview function! -->
+			<ul>
+				<li class="navelem">
+					<a class="el" href="class_database_like.html">DatabaseLike</a>
+				</li>
+				<li class="footer">
+					Généré par
+					<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen" /></a>
+					1.13.2
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,235 @@
+#collection {
+	width: 80%;
+	margin-top: 50px;
+	height: calc(100% - 50px);
+}
+
+#collection-image-container {
+	margin: 0 10px 20px 10px;
+	position: relative;
+	min-width: 100px;
+	width: 60%;
+}
+
+#collection-image {
+	width: 100%;
+	aspect-ratio: 1;
+	border-radius: var(--rounded1);
+	object-fit: cover;
+}
+
+#collection-sounds {
+	overflow-y: auto;
+	height: 90%;
+	padding: 0px 15px;
+}
+
+#collection-sounds .sound-card {
+	border: 2px solid transparent;
+	border-radius: var(--rounded1);
+}
+
+#collection-sounds .sound-card:hover {
+	border: 2px solid var(--yellow);
+}
+
+#collection-title {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-wrap-mode: nowrap;
+}
+
+#collection-description {
+	margin-bottom: 20px;
+	overflow-wrap: break-word;
+}
+
+#collection-action-popup {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--primary);
+	border: 1px solid var(--border);
+	border-radius: var(--rounded1);
+	top: 35px;
+	left: 35px;
+	width: 180px;
+	z-index: 1;
+}
+
+#collection-action-popup button {
+	display: flex;
+	border: none;
+	padding: 10px;
+	background-color: transparent;
+}
+
+#collection-action-popup button i {
+	color: var(--constrast);
+	margin-right: 10px;
+}
+
+#collection-action-popup button:hover {
+	background-color: var(--secondary);
+}
+
+#collection-action-popup button:first-child:hover {
+	background-color: var(--secondary);
+	border-radius: var(--rounded1) var(--rounded1) 0 0;
+}
+
+#collection-action-popup button:last-child:hover {
+	background-color: var(--secondary);
+	border-radius: 0 0 var(--rounded1) var(--rounded1);
+}
+
+#collection-action-popup button:active {
+	outline: none;
+}
+
+#collection-play,
+#collection-edit,
+#collection-plus {
+	width: 60px;
+	height: 60px;
+}
+
+#collection-play i {
+	font-size: 1.4em;
+}
+
+#collection-play {
+	border-radius: 50%;
+}
+
+#collection-actions #collection-edit,
+#collection-actions #collection-plus,
+#collection-actions #collection-like,
+#collection-actions #collection-unlike,
+#collection-actions > #collection-clone,
+#collection-actions > #collection-play-random {
+	background-color: var(--primary-secondary);
+	border-radius: 50%;
+	margin: 0 20px;
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+
+#collection-plus {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#collection-image-edit {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	border-radius: 50%;
+	border: 1px solid var(--border);
+	width: 40px;
+	height: 40px;
+	background-color: var(--primary-secondary);
+	cursor: pointer;
+}
+
+#collection-owner-image {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	object-fit: cover;
+	margin-right: 10px;
+}
+
+#collection-owner:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1140px) {
+	#collection-actions {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#collection-edit,
+	#collection-plus {
+		margin: 20px 0;
+	}
+}
+
+.checkWrap {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin: 8px 0px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.checkmark {
+	position: absolute;
+	top: 11px;
+	left: 6px;
+	height: 20px;
+	width: 20px;
+	background-color: var(--primary-secondary);
+	border-radius: 2px;
+	border: solid 1px var(--primary-secondary);
+}
+
+.checkWrap:hover input ~ .checkmark {
+	background-color: var(--primary-secondary);
+	border: solid 1px var(--primary-secondary);
+}
+
+.checkWrap input:checked ~ .checkmark {
+	background-color: var(--action);
+	border: var(--action);
+}
+
+.checkWrap .checkmark:after {
+	left: 7px;
+	top: 3px;
+	width: 6px;
+	height: 11px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.check-label-artist {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	float: left;
+}
+
+.check-label-artist:after {
+	content: '';
+}
+
+.checkWrap input ~ .check-label-artist {
+	color: var(--boolean-action);
+}
+
+.checkWrap input:checked ~ .check-label-artist {
+	color: black;
+}
+
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+.checkWrap input:checked ~ .checkmark:after {
+	display: block;
+}

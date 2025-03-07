@@ -1,0 +1,328 @@
+@import 'colors.css';
+
+* {
+	user-select: none;
+}
+
+*:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.error {
+	border: 1px solid var(--error) !important;
+}
+
+.action:focus {
+	outline: none;
+}
+
+a {
+	color: var(--contrast);
+}
+
+a:hover {
+	color: var(--contrast);
+	text-decoration: none;
+}
+
+.clMenu button {
+	padding: 0.1rem 10%;
+	line-height: 1.3em;
+}
+
+.clMenuBtnMgEnd {
+	margin-right: 25px;
+}
+
+.clMgTopLogo {
+	margin-top: 13px;
+}
+
+.clBtnGrad {
+	background-image: linear-gradient(to right, var(--clrYellow) 0%, var(--clrOrange) 100%);
+}
+
+.clLogoText2 {
+	text-shadow:
+		1px 0 black,
+		-1px 0 black,
+		0 1px black,
+		0 -1px black,
+		1px 1px black,
+		-1px -1px black,
+		1px -1px black,
+		-1px 1px black;
+	color: var(--clrOrange);
+}
+
+/* Background Image */
+.clBkgLogImg {
+	opacity: 0.65;
+	background-image: url('../images/Illustrations/listeningSong.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+/* Background Image */
+.clBkgCreatePlaylist,
+.defaultBanner {
+	background-image: url('../../../web/images/Illustrations/playingGuitar.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: grey;
+		opacity: 0.4;
+	}
+}
+
+.clOpacity1 {
+	height: 100vh;
+}
+
+.clOpacity2 {
+	opacity: 0.8;
+	background-color: white;
+}
+
+.clBkOrange {
+	background-color: var(--orange);
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	min-height: 100vh;
+	overflow-y: hidden;
+}
+
+#main-container {
+	height: calc(100vh - 7vh - 10px);
+}
+
+.main-container-player {
+	height: calc(100vh - 7vh - (7vh + 4px) - 10px) !important;
+}
+
+#content-container {
+	width: calc(100% - 150px);
+	padding: 10px;
+	overflow-y: auto;
+	position: relative;
+}
+
+#content-container .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.switch,
+.littleSwitch {
+	position: relative;
+	display: inline-block;
+	width: 140px;
+	height: 25px;
+}
+
+.littleSwitch {
+	width: 100px;
+}
+
+.switch input,
+.littleSwitch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider,
+.littleSlider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 1px;
+	background-color: var(--orange);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	&:before {
+		position: absolute;
+		content: '';
+		height: 21px;
+		width: 21px;
+		left: 3.1px;
+		bottom: 1px;
+		background-color: white;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+	}
+}
+
+.switch input:checked + .slider,
+.littleSwitch input:checked + .littleSlider {
+	background-color: var(--orange);
+}
+
+.littleSwitch input:checked + .littleSlider:before {
+	transform: translateX(73px);
+}
+
+/* Rounded sliders */
+.slider.round,
+.littleSlider.round {
+	border-radius: 25px;
+	&:before {
+		border-radius: 50%;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--primary);
+}
+
+::-webkit-scrollbar-thumb,
+.actionGrad {
+	background: linear-gradient(90deg, var(--action), var(--orange));
+	border-radius: var(--rounded1);
+}
+
+.clBkImg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.loader {
+	border: 4px solid var(--border);
+	border-top: 4px solid var(--yellow);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loading {
+	0% {
+		background-color: var(--skeleton1);
+		color: var(--skeleton1);
+		border-radius: var(--rounded1);
+	}
+	50% {
+		background-color: var(--skeleton2);
+		color: var(--skeleton2);
+	}
+	100% {
+		background-color: var(--skeleton1);
+		color: var(--skeleton1);
+		border-radius: var(--rounded1);
+	}
+}
+
+.checkWrap {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin: 8px 0px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 100%;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	border-radius: 2px;
+	border: solid 1px #eee;
+}
+
+.checkWrap:hover input ~ .checkmark {
+	background-color: #eee;
+	border: solid 1px #eee;
+}
+
+.checkWrap input:checked ~ .checkmark {
+	background-color: var(--action);
+	border: var(--action);
+}
+
+.checkWrap .checkmark:after {
+	left: 7px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.check-label-artist,
+.check-label-report {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	float: left;
+}
+
+.check-label-artist:after {
+	content: '';
+}
+
+.checkWrap input ~ .check-label-artist {
+	color: var(--boolean-action);
+}
+
+.checkWrap input:checked ~ .check-label-artist {
+	color: black;
+}
+
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+.checkWrap input:checked ~ .checkmark:after {
+	display: block;
+}
+
+#reporting-popup .checkmark {
+	top: 0;
+}

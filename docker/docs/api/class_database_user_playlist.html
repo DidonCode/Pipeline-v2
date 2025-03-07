@@ -1,0 +1,1421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=11" />
+		<meta name="generator" content="Doxygen 1.13.2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Butify: Référence de la classe DatabaseUserPlaylist</title>
+		<link rel="icon" href="logoButifyIcon.png" type="image/x-icon" />
+		<link href="tabs.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="dynsections.js"></script>
+		<script type="text/javascript" src="clipboard.js"></script>
+		<link href="navtree.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="navtreedata.js"></script>
+		<script type="text/javascript" src="navtree.js"></script>
+		<script type="text/javascript" src="resize.js"></script>
+		<script type="text/javascript" src="cookie.js"></script>
+		<link href="search/search.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="search/searchdata.js"></script>
+		<script type="text/javascript" src="search/search.js"></script>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				init_search();
+			});
+			/* @license-end */
+		</script>
+		<link href="doxygen.css" rel="stylesheet" type="text/css" />
+		<link href="doxygen-style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="top">
+			<!-- do not remove this div, it is closed by doxygen! -->
+			<div id="titlearea">
+				<table cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr id="projectrow">
+							<td id="projectlogo">
+								<img alt="Logo" src="logoButify (2).png" />
+							</td>
+							<td id="projectalign">
+								<div id="projectname">Butify</div>
+								<div id="projectbrief">Plateforme de musique</div>
+							</td>
+							<td>
+								<div id="MSearchBox" class="MSearchBoxInactive">
+									<span class="left">
+										<span id="MSearchSelect" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+										<input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" /> </span
+									><span class="right">
+										<a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt="" /></a>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- end header part -->
+			<!-- Généré par Doxygen 1.13.2 -->
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				var searchBox = new SearchBox('searchBox', 'search/', '.html');
+				/* @license-end */
+			</script>
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				$(function () {
+					codefold.init(0);
+				});
+				/* @license-end */
+			</script>
+		</div>
+		<!-- top -->
+		<div id="side-nav" class="ui-resizable side-nav-resizable">
+			<div id="nav-tree">
+				<div id="nav-tree-contents">
+					<div id="nav-sync" class="sync"></div>
+				</div>
+			</div>
+			<div id="splitbar" style="-moz-user-select: none" class="ui-resizable-handle"></div>
+		</div>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				initNavTree('class_database_user_playlist.html', '');
+				initResizable(true);
+			});
+			/* @license-end */
+		</script>
+		<div id="doc-content">
+			<!-- window showing the filter options -->
+			<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)"></div>
+
+			<!-- iframe showing the search results (closed by default) -->
+			<div id="MSearchResultsWindow">
+				<div id="MSearchResults">
+					<div class="SRPage">
+						<div id="SRIndex">
+							<div id="SRResults"></div>
+							<div class="SRStatus" id="Loading">Chargement...</div>
+							<div class="SRStatus" id="Searching">Recherche...</div>
+							<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<div class="summary">
+					<a href="#pub-static-methods">Fonctions membres publiques statiques</a>
+				</div>
+				<div class="headertitle">
+					<div class="title">Référence de la classe DatabaseUserPlaylist</div>
+				</div>
+			</div>
+			<!--header-->
+			<div class="contents">
+				<p>Gestion des playlists de l'utilisateur dans la base de données. <a href="#details">Plus de détails...</a></p>
+				<table class="memberdecls">
+					<tr class="heading">
+						<td colspan="2">
+							<h2 class="groupheader">
+								<a id="pub-static-methods" name="pub-static-methods"></a>
+								Fonctions membres publiques statiques
+							</h2>
+						</td>
+					</tr>
+					<tr class="memitem:a7378aa51123377147e7636112abb0ac5" id="r_a7378aa51123377147e7636112abb0ac5">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a7378aa51123377147e7636112abb0ac5">create</a>
+							($user, $title, $description, $public)
+						</td>
+					</tr>
+					<tr class="memdesc:a7378aa51123377147e7636112abb0ac5">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Crée une nouvelle playlist et renvoie les données de la playlist. <br /></td>
+					</tr>
+					<tr class="separator:a7378aa51123377147e7636112abb0ac5">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:aed8bd15441d59928ea0ac1f893eea399" id="r_aed8bd15441d59928ea0ac1f893eea399">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#aed8bd15441d59928ea0ac1f893eea399">list</a>
+							($user)
+						</td>
+					</tr>
+					<tr class="memdesc:aed8bd15441d59928ea0ac1f893eea399">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie les données de toutes les playlists de l'utilisateur avec celles où l'utilisateur est collaborateur. <br /></td>
+					</tr>
+					<tr class="separator:aed8bd15441d59928ea0ac1f893eea399">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a19be16c928d61a46ab8298be2a283975" id="r_a19be16c928d61a46ab8298be2a283975">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a19be16c928d61a46ab8298be2a283975">get</a>
+							($user, $id)
+						</td>
+					</tr>
+					<tr class="memdesc:a19be16c928d61a46ab8298be2a283975">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie les données de la playlist correspondant à l'identifiant avec les permissions de l'utilisateur dessus. <br /></td>
+					</tr>
+					<tr class="separator:a19be16c928d61a46ab8298be2a283975">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a7e679ba321a2a93fff835bffdd28ac8d" id="r_a7e679ba321a2a93fff835bffdd28ac8d">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a7e679ba321a2a93fff835bffdd28ac8d">addSound</a>
+							($user, $id, $sound)
+						</td>
+					</tr>
+					<tr class="memdesc:a7e679ba321a2a93fff835bffdd28ac8d">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Ajoute une musique dans la playlist si elle appartient à l'utilisateur ou s'il a les permissions pour modifier. <br /></td>
+					</tr>
+					<tr class="separator:a7e679ba321a2a93fff835bffdd28ac8d">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:aff3466e30da55c9e22b3ee96043451de" id="r_aff3466e30da55c9e22b3ee96043451de">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#aff3466e30da55c9e22b3ee96043451de">removeSound</a>
+							($user, $id, $sound)
+						</td>
+					</tr>
+					<tr class="memdesc:aff3466e30da55c9e22b3ee96043451de">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Supprime une musique dans la playlist si elle appartient à l'utilisateur ou s'il a les permissions pour modifier. <br /></td>
+					</tr>
+					<tr class="separator:aff3466e30da55c9e22b3ee96043451de">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a7178885b92185b0afafc55ea74b20a7c" id="r_a7178885b92185b0afafc55ea74b20a7c">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a7178885b92185b0afafc55ea74b20a7c">edit</a>
+							($user, $id, $title, $description, $public, $image)
+						</td>
+					</tr>
+					<tr class="memdesc:a7178885b92185b0afafc55ea74b20a7c">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">
+							Modifie les données de la playlist et renvoie les nouvelles données si l'utilisateur est propriétaire.
+							<br />
+						</td>
+					</tr>
+					<tr class="separator:a7178885b92185b0afafc55ea74b20a7c">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a89f712f8cb8ad0a670d4d56c621b212e" id="r_a89f712f8cb8ad0a670d4d56c621b212e">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a89f712f8cb8ad0a670d4d56c621b212e">clone</a>
+							($user, $from, $to)
+						</td>
+					</tr>
+					<tr class="memdesc:a89f712f8cb8ad0a670d4d56c621b212e">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Clonage des musiques d'une playlist vers une autre playlist. <br /></td>
+					</tr>
+					<tr class="separator:a89f712f8cb8ad0a670d4d56c621b212e">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:ae4535f481e1a6835c7cffb9c25b07f3c" id="r_ae4535f481e1a6835c7cffb9c25b07f3c">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#ae4535f481e1a6835c7cffb9c25b07f3c">delete</a>
+							($user, $id)
+						</td>
+					</tr>
+					<tr class="memdesc:ae4535f481e1a6835c7cffb9c25b07f3c">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Supprime les likes, collaborateur de la playlist et la playlist de l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:ae4535f481e1a6835c7cffb9c25b07f3c">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a4e937e56b8d6efc4a70bcd75047504e5" id="r_a4e937e56b8d6efc4a70bcd75047504e5">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a4e937e56b8d6efc4a70bcd75047504e5">addCollaborator</a>
+							($user, $id, $collaborator)
+						</td>
+					</tr>
+					<tr class="memdesc:a4e937e56b8d6efc4a70bcd75047504e5">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Ajoute un collaborateur à la playlist de l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:a4e937e56b8d6efc4a70bcd75047504e5">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a8ba91b717afe1fa40c1e783e4b657142" id="r_a8ba91b717afe1fa40c1e783e4b657142">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a8ba91b717afe1fa40c1e783e4b657142">editCollaborator</a>
+							($user, $id, $collaborator, $modify)
+						</td>
+					</tr>
+					<tr class="memdesc:a8ba91b717afe1fa40c1e783e4b657142">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Modifie la permission de modifier d'un collaborateur sur la playlist de l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:a8ba91b717afe1fa40c1e783e4b657142">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a688940a00d32909b4e469c08eadb6e31" id="r_a688940a00d32909b4e469c08eadb6e31">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a688940a00d32909b4e469c08eadb6e31">getCollaborator</a>
+							($user, $id)
+						</td>
+					</tr>
+					<tr class="memdesc:a688940a00d32909b4e469c08eadb6e31">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie les données des utilisateurs qui sont collaborateur avec leur permission sur la playlist de l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:a688940a00d32909b4e469c08eadb6e31">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:ac0e5d6d907ee47429ee34ce55a2e0b1d" id="r_ac0e5d6d907ee47429ee34ce55a2e0b1d">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#ac0e5d6d907ee47429ee34ce55a2e0b1d">removeCollaborator</a>
+							($user, $id, $collaborator)
+						</td>
+					</tr>
+					<tr class="memdesc:ac0e5d6d907ee47429ee34ce55a2e0b1d">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Supprime le collaborateur de la playlist de l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:ac0e5d6d907ee47429ee34ce55a2e0b1d">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+				</table>
+				<a name="details" id="details"></a>
+				<h2 class="groupheader">Description détaillée</h2>
+				<div class="textblock">
+					<p>Gestion des playlists de l'utilisateur dans la base de données.</p>
+				</div>
+				<h2 class="groupheader">Documentation des fonctions membres</h2>
+				<a id="a4e937e56b8d6efc4a70bcd75047504e5" name="a4e937e56b8d6efc4a70bcd75047504e5"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a4e937e56b8d6efc4a70bcd75047504e5">&#9670;&#160;</a></span
+					>addCollaborator()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static addCollaborator</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$collaborator</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Ajoute un collaborateur à la playlist de l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$collaborator</td>
+										<td>Information du collaborateur</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>bool Confirme si l'exécution a réussi</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">L'identifiant</td>
+										<td>de la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">L'utilisateur</td>
+										<td>n'est pas propriétaire</td>
+									</tr>
+									<tr>
+										<td class="paramname">La</td>
+										<td>requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a7e679ba321a2a93fff835bffdd28ac8d" name="a7e679ba321a2a93fff835bffdd28ac8d"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a7e679ba321a2a93fff835bffdd28ac8d">&#9670;&#160;</a></span
+					>addSound()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static addSound</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$sound</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Ajoute une musique dans la playlist si elle appartient à l'utilisateur ou s'il a les permissions pour modifier.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$sound</td>
+										<td>Identifiant de la musique</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>bool Confirme si l'exécution a réussi</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a89f712f8cb8ad0a670d4d56c621b212e" name="a89f712f8cb8ad0a670d4d56c621b212e"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a89f712f8cb8ad0a670d4d56c621b212e">&#9670;&#160;</a></span
+					>clone()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static clone</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$from</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$to</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Clonage des musiques d'une playlist vers une autre playlist.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$from</td>
+										<td>Information de la playlist a copier</td>
+									</tr>
+									<tr>
+										<td class="paramname">$to</td>
+										<td>Information de la playlist a coller</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>bool Confirme si l'exécution a réussi</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a7378aa51123377147e7636112abb0ac5" name="a7378aa51123377147e7636112abb0ac5"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a7378aa51123377147e7636112abb0ac5">&#9670;&#160;</a></span
+					>create()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static create</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$title</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$description</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$public</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Crée une nouvelle playlist et renvoie les données de la playlist.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$title</td>
+										<td>Titre de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$description</td>
+										<td>Description de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$public</td>
+										<td>Visibilité de la playlist</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une classe playlist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>La playlist n'est pas retrouvée après sa création</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="ae4535f481e1a6835c7cffb9c25b07f3c" name="ae4535f481e1a6835c7cffb9c25b07f3c"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#ae4535f481e1a6835c7cffb9c25b07f3c">&#9670;&#160;</a></span
+					>delete()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static delete</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Supprime les likes, collaborateur de la playlist et la playlist de l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>bool Confirme si l'exécution a réussi</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant de la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur n'est pas propriétaire</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a7178885b92185b0afafc55ea74b20a7c" name="a7178885b92185b0afafc55ea74b20a7c"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a7178885b92185b0afafc55ea74b20a7c">&#9670;&#160;</a></span
+					>edit()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static edit</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$title</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$description</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$public</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$image</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Modifie les données de la playlist et renvoie les nouvelles données si l'utilisateur est propriétaire.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$title</td>
+										<td>Nouveau titre de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$description</td>
+										<td>Nouvelle description de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$public</td>
+										<td>Nouvelle visivilité de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$image</td>
+										<td>Nouvelle image de la playlist</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une classe playlist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant de la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>Si l'extension de l'image de la playlist n'est pas acceptée</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>Si la poids de l'image de la playlist dépasse la limite autorisée</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a8ba91b717afe1fa40c1e783e4b657142" name="a8ba91b717afe1fa40c1e783e4b657142"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a8ba91b717afe1fa40c1e783e4b657142">&#9670;&#160;</a></span
+					>editCollaborator()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static editCollaborator</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$collaborator</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$modify</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Modifie la permission de modifier d'un collaborateur sur la playlist de l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$collaborator</td>
+										<td>Information du collaborateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$modify</td>
+										<td>Autorisation de modifier</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>bool Confirme si l'exécution a réussi</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant de la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur n'est pas propriétaire</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a19be16c928d61a46ab8298be2a283975" name="a19be16c928d61a46ab8298be2a283975"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a19be16c928d61a46ab8298be2a283975">&#9670;&#160;</a></span
+					>get()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static get</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données de la playlist correspondant à l'identifiant avec les permissions de l'utilisateur dessus.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une classe playlist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant ne correspond à aucune playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a688940a00d32909b4e469c08eadb6e31" name="a688940a00d32909b4e469c08eadb6e31"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a688940a00d32909b4e469c08eadb6e31">&#9670;&#160;</a></span
+					>getCollaborator()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static getCollaborator</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données des utilisateurs qui sont collaborateur avec leur permission sur la playlist de l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe user sous la forme d'un tableau associatif filtré</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant de la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur n'est pas propriétaire</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="aed8bd15441d59928ea0ac1f893eea399" name="aed8bd15441d59928ea0ac1f893eea399"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#aed8bd15441d59928ea0ac1f893eea399">&#9670;&#160;</a></span
+					>list()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static list</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie les données de toutes les playlists de l'utilisateur avec celles où l'utilisateur est collaborateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>array Une liste de classe playlist sous la forme d'un tableau associatif</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="ac0e5d6d907ee47429ee34ce55a2e0b1d" name="ac0e5d6d907ee47429ee34ce55a2e0b1d"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#ac0e5d6d907ee47429ee34ce55a2e0b1d">&#9670;&#160;</a></span
+					>removeCollaborator()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static removeCollaborator</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$collaborator</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Supprime le collaborateur de la playlist de l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$collaborator</td>
+										<td>Information du collaborateur</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>bool Confirme si l'exécution a réussi</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant de la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur n'est pas propriétaire</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="aff3466e30da55c9e22b3ee96043451de" name="aff3466e30da55c9e22b3ee96043451de"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#aff3466e30da55c9e22b3ee96043451de">&#9670;&#160;</a></span
+					>removeSound()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static removeSound</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$user</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$id</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$sound</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Supprime une musique dans la playlist si elle appartient à l'utilisateur ou s'il a les permissions pour modifier.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$user</td>
+										<td>Information de l'utilisateur</td>
+									</tr>
+									<tr>
+										<td class="paramname">$id</td>
+										<td>Identifiant de la playlist</td>
+									</tr>
+									<tr>
+										<td class="paramname">$sound</td>
+										<td>Identifiant de la musique</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>bool Confirme si l'exécution a réussi</dd>
+						</dl>
+						<dl class="exception">
+							<dt>Exceptions</dt>
+							<dd>
+								<table class="exception">
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'identifiant de la playlist n'est pas valide</td>
+									</tr>
+									<tr>
+										<td class="paramname">Exception</td>
+										<td>L'utilisateur n'est pas propriétaire</td>
+									</tr>
+									<tr>
+										<td class="paramname">PDOException</td>
+										<td>La requête échoue</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<hr />
+				La documentation de cette classe a été générée à partir du fichier suivant :
+				<ul>
+					<li>database/user/<a class="el" href="database_2user_2playlist_8php.html">playlist.php</a></li>
+				</ul>
+			</div>
+			<!-- contents -->
+		</div>
+		<!-- doc-content -->
+		<!-- start footer part -->
+		<div id="nav-path" class="navpath">
+			<!-- id is needed for treeview function! -->
+			<ul>
+				<li class="navelem">
+					<a class="el" href="class_database_user_playlist.html">DatabaseUserPlaylist</a>
+				</li>
+				<li class="footer">
+					Généré par
+					<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen" /></a>
+					1.13.2
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

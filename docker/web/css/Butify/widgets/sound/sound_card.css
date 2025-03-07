@@ -1,0 +1,233 @@
+.sound-card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 8px;
+	position: relative;
+	transition: box-shadow 0.3s ease;
+}
+
+.sound-card-colunm {
+	flex-direction: column;
+	max-width: 350px;
+}
+
+.sound-card-image-skeleton {
+	display: none;
+}
+
+.sound-card-image-container {
+	width: 15%;
+	max-width: 65px;
+	margin-right: 5px;
+	position: relative;
+}
+
+.sound-card-image,
+.sound-card-image-skeleton {
+	aspect-ratio: 1;
+	object-fit: cover;
+	width: 100%;
+	border-radius: var(--rounded1);
+}
+
+.sound-card-skeleton .sound-card-image {
+	display: none;
+	/*    width: 200px !important;*/
+}
+
+.sound-card-colunm .sound-card-image {
+	width: unset;
+	height: 100%;
+	aspect-ratio: unset;
+	max-width: calc(350px - 10px - 10px);
+}
+
+.sound-card-skeleton .sound-card-image-skeleton {
+	display: block;
+	animation: loading 1s infinite ease-in-out;
+}
+
+.sound-card-detail {
+	flex: 1;
+	width: 0%;
+}
+
+.sound-card-colunm .sound-card-detail {
+	width: 100%;
+}
+
+.sound-card-title {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+	color: var(--contrast);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.sound-card-colunm .sound-card-title {
+	text-transform: uppercase;
+}
+
+.sound-card-skeleton .sound-card-title {
+	animation: loading 1s infinite ease-in-out;
+	height: 20px;
+}
+
+.sound-card-description {
+	font-size: 0.9rem;
+	color: var(--contrast);
+	margin: 0.25rem 0 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.sound-card-skeleton .sound-card-description {
+	animation: loading 1s infinite ease-in-out;
+	height: 20px;
+}
+
+.sound-card-description-artist {
+	color: var(--contrast);
+	text-decoration: none;
+}
+
+.sound-card-description-artist:hover {
+	text-decoration: underline;
+}
+
+.sound-card-skeleton .sound-card-description-artist {
+	animation: loading 1s infinite ease-in-out;
+}
+
+.sound-card-plus {
+	position: relative;
+}
+
+.sound-card-colunm .sound-card-plus {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.sound-card-skeleton .sound-card-plus-button,
+.sound-card-skeleton .sound-card-plus-button i {
+	animation: loading 1s infinite ease-in-out;
+	text-shadow: none;
+}
+
+.sound-card-plus-column {
+	position: relative;
+	width: 100%;
+	margin-right: 0;
+	height: 200px;
+}
+
+.sound-card-skeleton .sound-card-plus-column .sound-card-image-skeleton {
+	height: 100%;
+}
+
+.sound-card-plus-button,
+.sound-card-remove {
+	background: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+.sound-card-colunm .sound-card-plus-button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.sound-card-colunm .sound-card-plus-button i {
+	text-shadow: 0 0 4px black;
+}
+
+.sound-card-plus-popup {
+	position: absolute;
+	display: none;
+	flex-direction: column;
+	background-color: var(--primary);
+	border: 1px solid var(--border);
+	border-radius: var(--rounded1);
+	width: 200px;
+	top: 100%;
+	right: 15px;
+	z-index: 1;
+}
+
+.sound-card-plus-popup button {
+	display: flex;
+	border: none;
+	padding: 10px;
+	text-align: left;
+	background-color: transparent;
+}
+
+.sound-card-colunm .sound-card-plus-popup {
+	top: 30px;
+	right: 20px;
+}
+
+.sound-card-plus-popup:hover {
+	display: flex;
+	transition: 2s;
+}
+
+.sound-card-plus-button:hover + .sound-card-plus-popup {
+	display: flex;
+	transition: 2s;
+}
+
+.sound-card-plus-button:focus {
+	outline: none;
+}
+
+.sound-card-plus-popup button i {
+	color: var(--constrast);
+	margin-right: 10px;
+}
+
+.sound-card-plus-popup button:hover {
+	background-color: var(--secondary);
+}
+
+.sound-card-plus-popup button:first-child:hover {
+	background-color: var(--secondary);
+	border-radius: var(--rounded1) var(--rounded1) 0 0;
+}
+
+.sound-card-plus-popup button:last-child:hover {
+	background-color: var(--secondary);
+	border-radius: 0 0 var(--rounded1) var(--rounded1);
+}
+
+.sound-card-plus-popup button:active {
+	outline: none;
+}
+
+.selected-card {
+	border: 2px solid var(--action) !important;
+	border-radius: var(--rounded1);
+}
+
+.sound-card-badge {
+	position: absolute;
+	top: -3px;
+	right: -4px;
+	font-size: 1.3em;
+	color: var(--action);
+}
+
+.sound-card-colunm .sound-card-badge {
+	font-size: 1.8em;
+}

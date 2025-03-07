@@ -1,0 +1,6 @@
+var searchData = [
+	['toarray_0', ['toArray', ['../class_artist.html#a658defb34762c8f40085aec87e16ba1a', 1, 'Artist\toArray()'], ['../class_playlist.html#a658defb34762c8f40085aec87e16ba1a', 1, 'Playlist\toArray()'], ['../class_sound.html#a658defb34762c8f40085aec87e16ba1a', 1, 'Sound\toArray()'], ['../class_user.html#a658defb34762c8f40085aec87e16ba1a', 1, 'User\toArray()']]],
+	['toclass_1', ['toClass', ['../class_artist.html#afd5f087cc26a0a2183ca7b6c53e901fd', 1, 'Artist\toClass()'], ['../class_playlist.html#ac1a7442e6c30a0b1da89a855d6a7aad5', 1, 'Playlist\toClass()'], ['../class_sound.html#a53c0fbbf3cd5a7c9af48c3a027de29d2', 1, 'Sound\toClass()'], ['../class_user.html#a8b2d5a78ac9674d24a5f0ccea8efe0df', 1, 'User\toClass($user)']]],
+	['tofilter_2', ['toFilter', ['../class_user.html#a6ca2552953b7b19987f6f5e974e77b01', 1, 'User']]],
+	['tostring_3', ['toString', ['../class_artist.html#a5558c5d549f41597377fa1ea8a1cefa3', 1, 'Artist\toString()'], ['../class_playlist.html#a5558c5d549f41597377fa1ea8a1cefa3', 1, 'Playlist\toString()'], ['../class_sound.html#a5558c5d549f41597377fa1ea8a1cefa3', 1, 'Sound\toString()'], ['../class_user.html#a5558c5d549f41597377fa1ea8a1cefa3', 1, 'User\toString()']]],
+];

@@ -1,0 +1,30 @@
+#button-new-playlist {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background-color: var(--action);
+	border-radius: var(--rounded1);
+	border: none;
+	width: 60px;
+	height: 60px;
+	z-index: 5;
+}
+
+#button-new-playlist i {
+	color: black;
+	font-size: 1.5em;
+	transition: scale 0.2s;
+}
+
+#button-new-playlist:hover > i {
+	scale: 1.2;
+}
+
+.button-new-playlist-player {
+	bottom: 85px !important;
+	right: 20px !important;
+}
+
+#player {
+	right: 100px;
+}

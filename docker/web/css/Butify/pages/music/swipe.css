@@ -1,0 +1,94 @@
+.like-swipe {
+	border-radius: 100%;
+	padding: 8px 7px 7px 7px;
+	background-color: #f7cbcb;
+}
+
+@media screen and (min-width: 433px) {
+	.rounded-img {
+		border-radius: 20px;
+		width: 350px;
+		height: 350px;
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 432px) {
+	.rounded-img {
+		border-radius: 20px;
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+	}
+}
+
+#first-sound {
+	position: relative;
+}
+
+.secondSound {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.liked-sound {
+	animation: toRight 1s forwards ease-in-out;
+}
+
+.unliked-sound {
+	animation: toLeft 1s forwards ease-in-out;
+}
+
+@keyframes toRight {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	80% {
+		left: 100%;
+		top: 0px;
+		transform: rotate(10deg);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes toLeft {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	80% {
+		left: -100%;
+		top: 0px;
+		transform: rotate(-10deg);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.cancel-color {
+	color: #808080;
+}
+
+.like-color {
+	color: #e80000;
+}
+
+@media screen and (min-width: 433px) {
+	.swipe-img-container {
+		position: relative;
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 432px) {
+	.swipe-img-container {
+		position: relative;
+		width: 200px;
+	}
+}

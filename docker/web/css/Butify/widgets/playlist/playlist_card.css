@@ -1,0 +1,132 @@
+.playlist-card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 8px;
+	position: relative;
+	transition: box-shadow 0.3s ease;
+}
+
+.playlist-card-colunm {
+	flex-direction: column;
+	min-width: 200px;
+	width: 200px;
+}
+
+.playlist-card-image {
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: var(--rounded1);
+	width: 100%;
+}
+
+.playlist-card-image-container {
+	width: 15%;
+	max-width: 65px;
+	margin-right: 5px;
+	position: relative;
+}
+
+.playlist-card-colunm .playlist-card-image-container {
+	width: unset;
+	max-width: unset;
+	margin-right: unset;
+}
+
+.playlist-card-image-skeleton {
+	display: none;
+}
+
+.playlist-card-skeleton .playlist-card-image {
+	display: none;
+}
+
+.playlist-card-skeleton .playlist-card-image-skeleton {
+	animation: loading 1s infinite ease-in-out;
+	aspect-ratio: 1;
+	display: block;
+}
+
+.playlist-card-colunm .playlist-card-image {
+	height: 200px;
+	max-width: unset;
+	aspect-ratio: unset;
+	width: 100%;
+}
+
+.playlist-card-detail {
+	flex: 1;
+	width: 0px;
+}
+
+.playlist-card-colunm .playlist-card-detail {
+	width: 0;
+}
+
+.playlist-card-title {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+	color: var(--contrast);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.playlist-card-colunm .playlist-card-title {
+	text-transform: uppercase;
+}
+
+.playlist-card-skeleton .playlist-card-title {
+	animation: loading 1s infinite ease-in-out;
+}
+
+.playlist-card-description {
+	font-size: 0.9rem;
+	color: var(--contrast);
+	margin: 0.25rem 0 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 20px;
+}
+
+.playlist-card-skeleton .playlist-card-description {
+	animation: loading 1s infinite ease-in-out;
+}
+
+.playlist-card-plus {
+	position: relative;
+}
+
+.playlist-card-plus button {
+	background: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+.playlist-card-skeleton .playlist-card-plus button,
+.playlist-card-skeleton .playlist-card-plus button i {
+	animation: loading 1s infinite ease-in-out;
+}
+
+.playlist-card-badge {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	font-size: 1.3em;
+	color: var(--action);
+}
+
+.playlist-card-colunm .playlist-card-badge {
+	font-size: 1.8em;
+}
+
+.playlist-card-colunm .playlist-card-plus {
+	margin: auto;
+}

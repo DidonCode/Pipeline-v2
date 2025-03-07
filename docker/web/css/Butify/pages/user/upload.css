@@ -1,0 +1,67 @@
+#audio-form {
+	width: 50%;
+}
+
+#video-form {
+	width: 50%;
+}
+
+#audio-form input[type='text'],
+#video-form input[type='text'] {
+	border: 2px solid var(--border);
+	margin: 10px 0px;
+}
+
+#audio-form button,
+#video-form button {
+	margin-top: 5px;
+}
+
+.upload-file {
+	border: 1px solid var(--contrast);
+	padding: 10px;
+	border-radius: var(--rounded1);
+	text-align: center;
+	margin: 10px 0px;
+	cursor: pointer;
+}
+
+.upload-file * {
+	margin: auto;
+}
+
+.upload-file p {
+	margin: 0;
+}
+
+#upload-choice {
+	width: 20%;
+	margin: 20px 0px;
+}
+
+#audio-image-preview {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+#video-image-preview {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+#video-video-preview {
+	width: 100%;
+	cursor: pointer;
+}
+
+.error {
+	border-color: red !important;
+}
+
+#audio-audio-preview {
+	width: 100%;
+}

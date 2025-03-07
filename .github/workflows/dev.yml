@@ -1,0 +1,40 @@
+name: DEV
+
+on:
+  push:
+    branches:
+      - dev
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Clonage du dépôt
+              uses: actions/checkout@v3
+
+            - name: Initialisation de NPM
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '18'
+
+            - name: Installation du projet
+              run: chmod -R 777 ./ & npm install
+
+            - name: Temporisation
+              run: sleep 10
+
+            - name: Insertion des données
+              run: mysql -h 127.0.0.1 -u root -pbutify butify < ./docker/example.sql
+
+            - name: Insertion d'une clé API Youtube
+              run: mysql -h 127.0.0.1 -u root -pbutify butify -e "INSERT INTO youtube (value, exedeed, date) VALUES ('${{ secrets.YOUTUBE_KEY }}', 0, '2025-01-01');"
+
+            - name: Lancement des tests API
+              run: npm run test
+
+            - name: Arrêt de Docker
+              run: npm run stop

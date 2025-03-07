@@ -1,0 +1,180 @@
+@import 'colors.css';
+
+.nav-bar {
+	width: 150px;
+	border-right: 1.5px solid var(--border);
+}
+
+.nav-bar button i {
+	font-size: 1.3em;
+	transition: font-size 0.2s;
+}
+
+#personal-playlist-side-bar {
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+	overflow-y: auto;
+	margin-bottom: 10px;
+}
+
+.nav-bar a button {
+	background: linear-gradient(90deg, var(--action), var(--orange)) !important;
+	background-size: 200% 200%;
+	background-position: 1% 50%;
+	transition: background-position 0.5s ease-in-out;
+}
+
+.nav-bar a:hover > button {
+	background-position: 99% 50%;
+}
+
+@media screen and (max-width: 700px) {
+	.nav-bar {
+		width: 70px;
+		transition: 0.05s;
+	}
+
+	.nav-bar button {
+		width: 50px;
+		height: 50px;
+	}
+
+	.nav-bar button i {
+		font-size: 1.3em;
+		padding-right: 0 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.nav-bar button p {
+		display: none;
+	}
+
+	#personal-playlist-side-bar {
+		padding: 0;
+	}
+
+	.nav-bar-playlist-add i {
+		font-size: 1.3em;
+	}
+
+	.nav-bar a:hover > button div i {
+		font-size: 1.7em;
+	}
+
+	#content-container {
+		width: calc(100% - 50px);
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.nav-bar-playlist-add:hover > i {
+		font-size: 2.1em;
+	}
+}
+
+.nav-bar-playlist {
+	aspect-ratio: 1;
+	object-fit: cover;
+	width: 100%;
+	border: 2px solid transparent;
+}
+
+.nav-bar-playlist:hover {
+	border: 2px solid var(--yellow);
+}
+
+.nav-bar-playlist-add {
+	aspect-ratio: 1;
+	border: 2px solid transparent;
+	background-color: var(--primary-secondary);
+	transition:
+		border,
+		font-size 0.3s;
+}
+
+.nav-bar-playlist-add i {
+	font-size: 2em;
+}
+
+.nav-bar-playlist-add:hover {
+	border: 2px solid var(--yellow);
+}
+
+.nav-wave-text {
+	font-size: 5rem;
+	font-weight: bold;
+	color: var(--orange);
+	display: flex;
+	text-decoration: none;
+}
+
+.nav-wave-text:hover {
+	color: var(--orange);
+}
+
+.nav-wave-text span {
+	display: inline-block;
+	animation: wave 1.5s ease-in-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+	will-change: transform;
+	padding: 0 1.5px 0 1.5px;
+}
+
+@keyframes wave {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+}
+
+#user-connected button {
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	border: none;
+	border-radius: var(--rounded1);
+	background-size: cover;
+}
+
+#profil-menu {
+	border: 1px solid var(--border);
+	margin-left: -110px;
+	background-color: var(--primary);
+}
+
+#profil-menu .dropdown-item:hover {
+	background-color: transparent;
+	color: var(--orange);
+}
+
+#progress-bar-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: var(--primary);
+	z-index: 1000;
+}
+
+#progress-bar {
+	width: 0;
+	height: 100%;
+	background: linear-gradient(90deg, var(--action), var(--orange));
+	transition: width 0.5s ease;
+}
+
+#profil-image {
+	width: 50px;
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+.dropdown-menu {
+	min-width: 0;
+	left: 5px;
+}

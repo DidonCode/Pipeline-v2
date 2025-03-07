@@ -1,0 +1,753 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=11" />
+		<meta name="generator" content="Doxygen 1.13.2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Butify: Référence de la classe ApiSound</title>
+		<link rel="icon" href="logoButifyIcon.png" type="image/x-icon" />
+		<link href="tabs.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="dynsections.js"></script>
+		<script type="text/javascript" src="clipboard.js"></script>
+		<link href="navtree.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="navtreedata.js"></script>
+		<script type="text/javascript" src="navtree.js"></script>
+		<script type="text/javascript" src="resize.js"></script>
+		<script type="text/javascript" src="cookie.js"></script>
+		<link href="search/search.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="search/searchdata.js"></script>
+		<script type="text/javascript" src="search/search.js"></script>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				init_search();
+			});
+			/* @license-end */
+		</script>
+		<link href="doxygen.css" rel="stylesheet" type="text/css" />
+		<link href="doxygen-style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="top">
+			<!-- do not remove this div, it is closed by doxygen! -->
+			<div id="titlearea">
+				<table cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr id="projectrow">
+							<td id="projectlogo">
+								<img alt="Logo" src="logoButify (2).png" />
+							</td>
+							<td id="projectalign">
+								<div id="projectname">Butify</div>
+								<div id="projectbrief">Plateforme de musique</div>
+							</td>
+							<td>
+								<div id="MSearchBox" class="MSearchBoxInactive">
+									<span class="left">
+										<span id="MSearchSelect" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+										<input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" /> </span
+									><span class="right">
+										<a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt="" /></a>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- end header part -->
+			<!-- Généré par Doxygen 1.13.2 -->
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				var searchBox = new SearchBox('searchBox', 'search/', '.html');
+				/* @license-end */
+			</script>
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				$(function () {
+					codefold.init(0);
+				});
+				/* @license-end */
+			</script>
+		</div>
+		<!-- top -->
+		<div id="side-nav" class="ui-resizable side-nav-resizable">
+			<div id="nav-tree">
+				<div id="nav-tree-contents">
+					<div id="nav-sync" class="sync"></div>
+				</div>
+			</div>
+			<div id="splitbar" style="-moz-user-select: none" class="ui-resizable-handle"></div>
+		</div>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				initNavTree('class_api_sound.html', '');
+				initResizable(true);
+			});
+			/* @license-end */
+		</script>
+		<div id="doc-content">
+			<!-- window showing the filter options -->
+			<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)"></div>
+
+			<!-- iframe showing the search results (closed by default) -->
+			<div id="MSearchResultsWindow">
+				<div id="MSearchResults">
+					<div class="SRPage">
+						<div id="SRIndex">
+							<div id="SRResults"></div>
+							<div class="SRStatus" id="Loading">Chargement...</div>
+							<div class="SRStatus" id="Searching">Recherche...</div>
+							<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<div class="summary">
+					<a href="#pri-static-methods">Fonctions membres privées statiques</a>
+					&#124;
+					<a href="class_api_sound-members.html">Liste de tous les membres</a>
+				</div>
+				<div class="headertitle">
+					<div class="title">Référence de la classe ApiSound</div>
+				</div>
+			</div>
+			<!--header-->
+			<div class="contents">
+				<p>
+					Cette classe regroupe toutes les fonctions permettant d'interagir avec l'API pour récupérer des musiques.
+					<a href="#details">Plus de détails...</a>
+				</p>
+				<table class="memberdecls">
+					<tr class="heading">
+						<td colspan="2">
+							<h2 class="groupheader">
+								<a id="pri-static-methods" name="pri-static-methods"></a>
+								Fonctions membres privées statiques
+							</h2>
+						</td>
+					</tr>
+					<tr class="memitem:a6d790cd9d5005ce7402846bddf57763f" id="r_a6d790cd9d5005ce7402846bddf57763f">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_sound.html">Sound</a> &gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a6d790cd9d5005ce7402846bddf57763f">byPlaylist</a>
+							(BuildContext context, String id) async
+						</td>
+					</tr>
+					<tr class="memdesc:a6d790cd9d5005ce7402846bddf57763f">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère les musiques d'une playlist. <br /></td>
+					</tr>
+					<tr class="separator:a6d790cd9d5005ce7402846bddf57763f">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a90e058d5864c5f09b92bab759a37233b" id="r_a90e058d5864c5f09b92bab759a37233b">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_sound.html">Sound</a> &gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a90e058d5864c5f09b92bab759a37233b">byArtist</a>
+							(BuildContext context, String id) async
+						</td>
+					</tr>
+					<tr class="memdesc:a90e058d5864c5f09b92bab759a37233b">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère les musiques d'un artiste. <br /></td>
+					</tr>
+					<tr class="separator:a90e058d5864c5f09b92bab759a37233b">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a4862da91f9e9a03487816be63e1ac786" id="r_a4862da91f9e9a03487816be63e1ac786">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_sound.html">Sound</a> &gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a4862da91f9e9a03487816be63e1ac786">likedByArtist</a>
+							(BuildContext context, String id) async
+						</td>
+					</tr>
+					<tr class="memdesc:a4862da91f9e9a03487816be63e1ac786">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère les musiques aimées d'un artiste. <br /></td>
+					</tr>
+					<tr class="separator:a4862da91f9e9a03487816be63e1ac786">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a4fdc1f44a7f5df00a47d573bf219e564" id="r_a4fdc1f44a7f5df00a47d573bf219e564">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_sound.html">Sound</a> &gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a4fdc1f44a7f5df00a47d573bf219e564">likedByUser</a>
+							(BuildContext context, String token) async
+						</td>
+					</tr>
+					<tr class="memdesc:a4fdc1f44a7f5df00a47d573bf219e564">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère les musiques aimées de l'utilisateur connecté. <br /></td>
+					</tr>
+					<tr class="separator:a4fdc1f44a7f5df00a47d573bf219e564">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a18f254bf06838f4865b4bddb54eb060b" id="r_a18f254bf06838f4865b4bddb54eb060b">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_sound.html">Sound</a> &gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a18f254bf06838f4865b4bddb54eb060b">byTitle</a>
+							(BuildContext context, String title) async
+						</td>
+					</tr>
+					<tr class="memdesc:a18f254bf06838f4865b4bddb54eb060b">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère les musiques par titres. <br /></td>
+					</tr>
+					<tr class="separator:a18f254bf06838f4865b4bddb54eb060b">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:aad698e9ff3f7493ef9eb14b61f9fd1c6" id="r_aad698e9ff3f7493ef9eb14b61f9fd1c6">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_sound.html">Sound</a> &gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#aad698e9ff3f7493ef9eb14b61f9fd1c6">byHomeActivity</a>
+							(BuildContext context, String token, String type) async
+						</td>
+					</tr>
+					<tr class="memdesc:aad698e9ff3f7493ef9eb14b61f9fd1c6">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupere les musiques en fonction de l'activité de l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:aad698e9ff3f7493ef9eb14b61f9fd1c6">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a8e736ccd408c166189cea20a77a20c29" id="r_a8e736ccd408c166189cea20a77a20c29">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_sound.html">Sound</a> &gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a8e736ccd408c166189cea20a77a20c29">byExplore</a>
+							(BuildContext context, String type) async
+						</td>
+					</tr>
+					<tr class="memdesc:a8e736ccd408c166189cea20a77a20c29">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupere les musiques de l'exploration de Butify (Plus aimées, plus écoutées etc ...). <br /></td>
+					</tr>
+					<tr class="separator:a8e736ccd408c166189cea20a77a20c29">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+				</table>
+				<a name="details" id="details"></a>
+				<h2 class="groupheader">Description détaillée</h2>
+				<div class="textblock">
+					<p>Cette classe regroupe toutes les fonctions permettant d'interagir avec l'API pour récupérer des musiques.</p>
+				</div>
+				<h2 class="groupheader">Documentation des fonctions membres</h2>
+				<a id="a90e058d5864c5f09b92bab759a37233b" name="a90e058d5864c5f09b92bab759a37233b"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a90e058d5864c5f09b92bab759a37233b">&#9670;&#160;</a></span
+					>byArtist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_sound.html">Sound</a>
+												&gt; &gt; ApiSound::byArtist
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère les musiques d'un artiste.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">id</td>
+										<td>L'identifiant de l'artiste.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Sound&gt;&gt; La liste des musiques de l'artiste.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a8e736ccd408c166189cea20a77a20c29" name="a8e736ccd408c166189cea20a77a20c29"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a8e736ccd408c166189cea20a77a20c29">&#9670;&#160;</a></span
+					>byExplore()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_sound.html">Sound</a>
+												&gt; &gt; ApiSound::byExplore
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>type</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupere les musiques de l'exploration de Butify (Plus aimées, plus écoutées etc ...).</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">type</td>
+										<td>Le type d'explorations à récuperer.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Sound&gt;&gt; La liste des musiques celon l'exploration.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="aad698e9ff3f7493ef9eb14b61f9fd1c6" name="aad698e9ff3f7493ef9eb14b61f9fd1c6"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#aad698e9ff3f7493ef9eb14b61f9fd1c6">&#9670;&#160;</a></span
+					>byHomeActivity()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_sound.html">Sound</a>
+												&gt; &gt; ApiSound::byHomeActivity
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>token</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>type</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupere les musiques en fonction de l'activité de l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">type</td>
+										<td>Le type d'activité a récuperer.</td>
+									</tr>
+									<tr>
+										<td class="paramname">token</td>
+										<td>Le token de l'utilisateur permettant les requêtes.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Sound&gt;&gt; La liste de musiques celon l'activité de l'utilisateur.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a6d790cd9d5005ce7402846bddf57763f" name="a6d790cd9d5005ce7402846bddf57763f"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a6d790cd9d5005ce7402846bddf57763f">&#9670;&#160;</a></span
+					>byPlaylist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_sound.html">Sound</a>
+												&gt; &gt; ApiSound::byPlaylist
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère les musiques d'une playlist.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">id</td>
+										<td>L'identifiant de la playlist .</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Sound&gt;&gt; La liste des musiques de la playlists.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a18f254bf06838f4865b4bddb54eb060b" name="a18f254bf06838f4865b4bddb54eb060b"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a18f254bf06838f4865b4bddb54eb060b">&#9670;&#160;</a></span
+					>byTitle()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_sound.html">Sound</a>
+												&gt; &gt; ApiSound::byTitle
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>title</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère les musiques par titres.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">title</td>
+										<td>Le titre de la/les musique/s.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Sound&gt;&gt; La liste des musique par titre.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a4862da91f9e9a03487816be63e1ac786" name="a4862da91f9e9a03487816be63e1ac786"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a4862da91f9e9a03487816be63e1ac786">&#9670;&#160;</a></span
+					>likedByArtist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_sound.html">Sound</a>
+												&gt; &gt; ApiSound::likedByArtist
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère les musiques aimées d'un artiste.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">id</td>
+										<td>L'identifiant de l'artiste .</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Sound&gt;&gt; La liste des musiques aimées de l'artiste.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a4fdc1f44a7f5df00a47d573bf219e564" name="a4fdc1f44a7f5df00a47d573bf219e564"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a4fdc1f44a7f5df00a47d573bf219e564">&#9670;&#160;</a></span
+					>likedByUser()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_sound.html">Sound</a>
+												&gt; &gt; ApiSound::likedByUser
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>token</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère les musiques aimées de l'utilisateur connecté.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">token</td>
+										<td>Le token de l'utilisateur permettant les requêtes.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Sound&gt;&gt; La liste de musiques aimées par l'utilisateur.</dd>
+						</dl>
+					</div>
+				</div>
+				<hr />
+				La documentation de cette classe a été générée à partir du fichier suivant :
+				<ul>
+					<li>SAE/mobile/lib/api/<a class="el" href="api__sound_8dart.html">api_sound.dart</a></li>
+				</ul>
+			</div>
+			<!-- contents -->
+		</div>
+		<!-- doc-content -->
+		<!-- start footer part -->
+		<div id="nav-path" class="navpath">
+			<!-- id is needed for treeview function! -->
+			<ul>
+				<li class="navelem">
+					<a class="el" href="class_api_sound.html">ApiSound</a>
+				</li>
+				<li class="footer">
+					Généré par
+					<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen" /></a>
+					1.13.2
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

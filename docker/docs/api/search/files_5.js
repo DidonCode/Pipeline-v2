@@ -1,0 +1,1 @@
+var searchData = [['playlist_2ephp_0', ['playlist.php', ['../class_2playlist_8php.html', 1, '(Espace de nommage global)'], ['../database_2playlist_8php.html', 1, '(Espace de nommage global)'], ['../database_2user_2playlist_8php.html', 1, '(Espace de nommage global)'], ['../youtube_2playlist_8php.html', 1, '(Espace de nommage global)']]]];

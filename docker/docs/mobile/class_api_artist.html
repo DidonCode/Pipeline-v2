@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=11" />
+		<meta name="generator" content="Doxygen 1.13.2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Butify: Référence de la classe ApiArtist</title>
+		<link rel="icon" href="logoButifyIcon.png" type="image/x-icon" />
+		<link href="tabs.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="dynsections.js"></script>
+		<script type="text/javascript" src="clipboard.js"></script>
+		<link href="navtree.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="navtreedata.js"></script>
+		<script type="text/javascript" src="navtree.js"></script>
+		<script type="text/javascript" src="resize.js"></script>
+		<script type="text/javascript" src="cookie.js"></script>
+		<link href="search/search.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="search/searchdata.js"></script>
+		<script type="text/javascript" src="search/search.js"></script>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				init_search();
+			});
+			/* @license-end */
+		</script>
+		<link href="doxygen.css" rel="stylesheet" type="text/css" />
+		<link href="doxygen-style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="top">
+			<!-- do not remove this div, it is closed by doxygen! -->
+			<div id="titlearea">
+				<table cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr id="projectrow">
+							<td id="projectlogo">
+								<img alt="Logo" src="logoButify (2).png" />
+							</td>
+							<td id="projectalign">
+								<div id="projectname">Butify</div>
+								<div id="projectbrief">Plateforme de musique</div>
+							</td>
+							<td>
+								<div id="MSearchBox" class="MSearchBoxInactive">
+									<span class="left">
+										<span id="MSearchSelect" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+										<input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" /> </span
+									><span class="right">
+										<a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt="" /></a>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- end header part -->
+			<!-- Généré par Doxygen 1.13.2 -->
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				var searchBox = new SearchBox('searchBox', 'search/', '.html');
+				/* @license-end */
+			</script>
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				$(function () {
+					codefold.init(0);
+				});
+				/* @license-end */
+			</script>
+		</div>
+		<!-- top -->
+		<div id="side-nav" class="ui-resizable side-nav-resizable">
+			<div id="nav-tree">
+				<div id="nav-tree-contents">
+					<div id="nav-sync" class="sync"></div>
+				</div>
+			</div>
+			<div id="splitbar" style="-moz-user-select: none" class="ui-resizable-handle"></div>
+		</div>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				initNavTree('class_api_artist.html', '');
+				initResizable(true);
+			});
+			/* @license-end */
+		</script>
+		<div id="doc-content">
+			<!-- window showing the filter options -->
+			<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)"></div>
+
+			<!-- iframe showing the search results (closed by default) -->
+			<div id="MSearchResultsWindow">
+				<div id="MSearchResults">
+					<div class="SRPage">
+						<div id="SRIndex">
+							<div id="SRResults"></div>
+							<div class="SRStatus" id="Loading">Chargement...</div>
+							<div class="SRStatus" id="Searching">Recherche...</div>
+							<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<div class="summary">
+					<a href="#pri-static-methods">Fonctions membres privées statiques</a>
+					&#124;
+					<a href="class_api_artist-members.html">Liste de tous les membres</a>
+				</div>
+				<div class="headertitle">
+					<div class="title">Référence de la classe ApiArtist</div>
+				</div>
+			</div>
+			<!--header-->
+			<div class="contents">
+				<p>Cette class regroupe toutes les fonctions permettant d'interagir avec l'API pour récuperer un ou plusieurs artistes. <a href="#details">Plus de détails...</a></p>
+				<table class="memberdecls">
+					<tr class="heading">
+						<td colspan="2">
+							<h2 class="groupheader">
+								<a id="pri-static-methods" name="pri-static-methods"></a>
+								Fonctions membres privées statiques
+							</h2>
+						</td>
+					</tr>
+					<tr class="memitem:a63e73b8b5f8e45488c9a6886544164c4" id="r_a63e73b8b5f8e45488c9a6886544164c4">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt;
+							<a class="el" href="class_artist.html">Artist</a>
+							&gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a63e73b8b5f8e45488c9a6886544164c4">byId</a>
+							(BuildContext context, String id) async
+						</td>
+					</tr>
+					<tr class="memdesc:a63e73b8b5f8e45488c9a6886544164c4">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère un artiste par son identifiant. <br /></td>
+					</tr>
+					<tr class="separator:a63e73b8b5f8e45488c9a6886544164c4">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a03ec3347065340dddd8f6bdbdf95b44f" id="r_a03ec3347065340dddd8f6bdbdf95b44f">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_artist.html">Artist</a>
+							&gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a03ec3347065340dddd8f6bdbdf95b44f">likedByArtist</a>
+							(BuildContext context, String id) async
+						</td>
+					</tr>
+					<tr class="memdesc:a03ec3347065340dddd8f6bdbdf95b44f">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">
+							Récupère la liste des artistes aimés par un artiste.
+							<br />
+						</td>
+					</tr>
+					<tr class="separator:a03ec3347065340dddd8f6bdbdf95b44f">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:aebf9ed572ba6dd16bf8760645dcc47ee" id="r_aebf9ed572ba6dd16bf8760645dcc47ee">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_artist.html">Artist</a>
+							&gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#aebf9ed572ba6dd16bf8760645dcc47ee">likedByUser</a>
+							(BuildContext context, String token) async
+						</td>
+					</tr>
+					<tr class="memdesc:aebf9ed572ba6dd16bf8760645dcc47ee">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère la liste des artistes aimés par l'utilisateur connecté. <br /></td>
+					</tr>
+					<tr class="separator:aebf9ed572ba6dd16bf8760645dcc47ee">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a5b612c5f0a5327e38eebfb652ea0f7ef" id="r_a5b612c5f0a5327e38eebfb652ea0f7ef">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_artist.html">Artist</a>
+							&gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a5b612c5f0a5327e38eebfb652ea0f7ef">byTitle</a>
+							(BuildContext context, String title) async
+						</td>
+					</tr>
+					<tr class="memdesc:a5b612c5f0a5327e38eebfb652ea0f7ef">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Récupère la liste des artistes par pseudo. <br /></td>
+					</tr>
+					<tr class="separator:a5b612c5f0a5327e38eebfb652ea0f7ef">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:a1f8cd58b530d4ea52167fd99d2e7ee36" id="r_a1f8cd58b530d4ea52167fd99d2e7ee36">
+						<td class="memItemLeft" align="right" valign="top">
+							static Future&lt; List&lt;
+							<a class="el" href="class_artist.html">Artist</a>
+							&gt; &gt;&#160;
+						</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a1f8cd58b530d4ea52167fd99d2e7ee36">byHomeActivity</a>
+							(BuildContext context, String token, String type) async
+						</td>
+					</tr>
+					<tr class="memdesc:a1f8cd58b530d4ea52167fd99d2e7ee36">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Recherche des artistes par rapport à l'activité de l'utilisateur. <br /></td>
+					</tr>
+					<tr class="separator:a1f8cd58b530d4ea52167fd99d2e7ee36">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+				</table>
+				<a name="details" id="details"></a>
+				<h2 class="groupheader">Description détaillée</h2>
+				<div class="textblock">
+					<p>Cette class regroupe toutes les fonctions permettant d'interagir avec l'API pour récuperer un ou plusieurs artistes.</p>
+				</div>
+				<h2 class="groupheader">Documentation des fonctions membres</h2>
+				<a id="a1f8cd58b530d4ea52167fd99d2e7ee36" name="a1f8cd58b530d4ea52167fd99d2e7ee36"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a1f8cd58b530d4ea52167fd99d2e7ee36">&#9670;&#160;</a></span
+					>byHomeActivity()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_artist.html">Artist</a>
+												&gt; &gt; ApiArtist::byHomeActivity
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>token</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>type</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Recherche des artistes par rapport à l'activité de l'utilisateur.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">token</td>
+										<td>Le token de l'utilisateur permettant les requêtes.</td>
+									</tr>
+									<tr>
+										<td class="paramname">type</td>
+										<td>Le type de requête demandé (ex mostLiked).</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Artist&gt;&gt; la liste d'artiste celon l'activité de l'utilisateur</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a63e73b8b5f8e45488c9a6886544164c4" name="a63e73b8b5f8e45488c9a6886544164c4"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a63e73b8b5f8e45488c9a6886544164c4">&#9670;&#160;</a></span
+					>byId()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt;
+												<a class="el" href="class_artist.html">Artist</a>
+												&gt; ApiArtist::byId
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère un artiste par son identifiant.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">id</td>
+										<td>L'identifiant de l'artiste à récupérer.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;Artist&gt; Les informations de l'artiste.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a5b612c5f0a5327e38eebfb652ea0f7ef" name="a5b612c5f0a5327e38eebfb652ea0f7ef"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a5b612c5f0a5327e38eebfb652ea0f7ef">&#9670;&#160;</a></span
+					>byTitle()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_artist.html">Artist</a>
+												&gt; &gt; ApiArtist::byTitle
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>title</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère la liste des artistes par pseudo.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">title</td>
+										<td>Le pseudo de l'artiste recherché.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Artist&gt;&gt; la liste des artistes par pseudo.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a03ec3347065340dddd8f6bdbdf95b44f" name="a03ec3347065340dddd8f6bdbdf95b44f"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a03ec3347065340dddd8f6bdbdf95b44f">&#9670;&#160;</a></span
+					>likedByArtist()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_artist.html">Artist</a>
+												&gt; &gt; ApiArtist::likedByArtist
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>id</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère la liste des artistes aimés par un artiste.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">id</td>
+										<td>L'identifiant de l'artiste.</td>
+									</tr>
+									<tr>
+										<td class="paramname">public</td>
+										<td>Indicateur de visibilité publique.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Artist&gt;&gt; la liste des artistes aimés par un artiste.</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="aebf9ed572ba6dd16bf8760645dcc47ee" name="aebf9ed572ba6dd16bf8760645dcc47ee"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#aebf9ed572ba6dd16bf8760645dcc47ee">&#9670;&#160;</a></span
+					>likedByUser()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">
+												static Future&lt; List&lt;
+												<a class="el" href="class_artist.html">Artist</a>
+												&gt; &gt; ApiArtist::likedByUser
+											</td>
+											<td>(</td>
+											<td class="paramtype">BuildContext</td>
+											<td class="paramname">
+												<span class="paramname"><em>context</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype">String</td>
+											<td class="paramname">
+												<span class="paramname"><em>token</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel private">private</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Récupère la liste des artistes aimés par l'utilisateur connecté.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">context</td>
+										<td>Le contexte de l'application, utilisé pour la navigation.</td>
+									</tr>
+									<tr>
+										<td class="paramname">token</td>
+										<td>Le token de l'utilisateur permettant les requêtes.</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>Future&lt;List&lt;Artist&gt;&gt; la liste des artistes aimés par l'utilisateur connecté.</dd>
+						</dl>
+					</div>
+				</div>
+				<hr />
+				La documentation de cette classe a été générée à partir du fichier suivant :
+				<ul>
+					<li>SAE/mobile/lib/api/<a class="el" href="api__artist_8dart.html">api_artist.dart</a></li>
+				</ul>
+			</div>
+			<!-- contents -->
+		</div>
+		<!-- doc-content -->
+		<!-- start footer part -->
+		<div id="nav-path" class="navpath">
+			<!-- id is needed for treeview function! -->
+			<ul>
+				<li class="navelem">
+					<a class="el" href="class_api_artist.html">ApiArtist</a>
+				</li>
+				<li class="footer">
+					Généré par
+					<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen" /></a>
+					1.13.2
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

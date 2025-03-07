@@ -1,0 +1,112 @@
+:root {
+	--primary: white;
+	--primary-secondary: #dbdbdb;
+	--secondary: #c0e4ff;
+	--action: #f4d35e;
+	--boolean-action: #b1b1b1;
+	--border: #4f4f4f;
+	--orange: #ee964b;
+	--error: red;
+	--contrast: black;
+	--contrast_img: white;
+	--rounded1: 0.7rem;
+	--textBtnSize: small;
+}
+
+.darkMode {
+	--primary: #1e1e1e;
+	--primary-secondary: #3f413f;
+	--secondary: #282828;
+	--action: #f4d35e;
+	--boolean-action: #b1b1b1;
+	--border: #4f4f4f;
+	--orange: #ee964b;
+	--error: red;
+	--contrast: white;
+	--contrast_img: black;
+
+	--rounded1: 0.7rem;
+
+	--textBtnSize: small;
+}
+
+.action {
+	background-color: var(--action);
+}
+
+.primary {
+	background-color: var(--primary);
+}
+
+.primary-secondary {
+	background-color: var(--primary-secondary);
+}
+
+.secondary {
+	background-color: var(--secondary);
+}
+
+.border {
+	background-color: var(--border);
+}
+
+.contrast-text {
+	color: var(--contrast);
+}
+
+.contrast-image {
+	color: var(--contrast_img);
+}
+
+.contrast-card {
+	background-color: var(--contrast);
+}
+
+.action-text {
+	color: var(--action);
+}
+
+.primary-text {
+	color: var(--primary);
+}
+
+.primary-secondary-text {
+	color: var(--primary-secondary);
+}
+
+.secondary-text {
+	color: var(--secondary);
+}
+
+.boolean-text {
+	color: var(--boolean-action);
+}
+
+.ternary-text {
+	color: var(--ternary);
+}
+
+.border-text {
+	color: var(--border);
+}
+
+.logo-text {
+	font-family: 'roboto';
+	background: -webkit-linear-gradient(90deg, var(--orange), var(--action));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.clRounded1 {
+	border-radius: var(--rounded1);
+}
+
+.clTextBtn {
+	font-size: var(--textBtnSize);
+	font-weight: 500;
+}
+
+.clBtnMenuSize {
+	width: 130px;
+	height: 45px;
+}

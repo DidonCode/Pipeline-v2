@@ -1,0 +1,31 @@
+@import '../../css/Butify/colors.css';
+
+.ensemble_card {
+	display: flex;
+}
+
+.card_admin {
+	width: 25%;
+	padding: 3%;
+	margin: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_admin:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_number {
+	margin: 0%;
+}
+
+.card_text {
+	margin: 0%;
+}
+
+.text_info {
+	display: flex;
+}

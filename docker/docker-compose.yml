@@ -1,0 +1,89 @@
+name: 'butify'
+services:
+    web:
+        build: .
+        image: php:8.0-apache
+        container_name: web
+        volumes:
+            - ./web:/var/www/html/web
+            - ./storage:/var/www/html/storage
+        ports:
+            - '8080:80'
+        networks:
+            - butify_network
+
+    storage:
+        image: php:8.0-apache
+        container_name: storage
+        volumes:
+            - ./storage:/var/www/html/storage
+        ports:
+            - '8081:80'
+        networks:
+            - butify_network
+
+    api:
+        build: .
+        image: php:8.0-apache
+        container_name: api
+        volumes:
+            - ./api:/var/www/html/api
+            - ./storage:/var/www/html/storage
+        ports:
+            - '8082:80'
+        depends_on:
+            - database
+        networks:
+            - butify_network
+
+    database:
+        image: mysql:8.0
+        container_name: database
+        environment:
+            MYSQL_ROOT_PASSWORD: butify
+            MYSQL_DATABASE: butify
+        volumes:
+            - mysql_data:/var/lib/mysql
+            - ./database:/docker-entrypoint-initdb.d
+        ports:
+            - '3306:3306'
+        networks:
+            - butify_network
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin
+        environment:
+            PMA_HOST: database
+            PMA_PORT: 3306
+            PMA_USER: root
+            PMA_PASSWORD: butify
+        ports:
+            - '8083:80'
+        networks:
+            - butify_network
+
+    stripe:
+        image: stripe/stripe-cli:latest
+        container_name: stripe
+        command: ['listen', '--api-key', 'sk_test_51Qrwg3Pfaun29rdGXHdIxIQAkp83EvJkx4FRk8nM712omkqWjCtRswf82W76K62Etuj3jnvObrM4JXHNGPo1ER1300W3rxLKzI', '--forward-to', 'http://api:80/api/user/subscription']
+        depends_on:
+            - api
+        networks:
+            - butify_network
+
+    docs:
+        image: nginx:alpine
+        container_name: docs
+        volumes:
+            - ./docs:/usr/share/nginx/html/docs
+        ports:
+            - '8084:80'
+
+volumes:
+    mysql_data:
+        driver: local
+
+networks:
+    butify_network:
+        driver: bridge

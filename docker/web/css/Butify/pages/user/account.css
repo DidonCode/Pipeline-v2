@@ -1,0 +1,62 @@
+#account {
+	width: 40%;
+}
+
+#subscription {
+	background-color: var(--primary);
+	border-radius: var(--rounded1);
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+#subscription i {
+	font-size: 4em;
+	margin-right: 25px;
+}
+
+#subscription-cancel {
+	background-color: transparent;
+	border: none;
+	color: var(--error);
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: 500;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+#subscription-title {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#subscription-description {
+	font-size: 14px;
+}
+
+.basic {
+	border: 2px solid #2ea148;
+}
+
+.basic i,
+.basic #subscription-title {
+	color: #2ea148;
+}
+
+.premium {
+	border: 2px solid #fbcc3f;
+}
+
+.premium i,
+.premium #subscription-title {
+	color: #fbcc3f;
+}
+
+@media screen and (max-width: 1100px) {
+	#account {
+		width: 80%;
+	}
+}

@@ -1,0 +1,178 @@
+.modal-content {
+	border: 1px solid var(--border);
+	border-radius: var(--rounded1);
+}
+
+.modal-header {
+	border-radius: var(--rounded1) var(--rounded1) 0 0;
+}
+
+.modal-footer,
+#collaborator-popup .modal-body {
+	border-radius: 0 0 var(--rounded1) var(--rounded1);
+}
+
+.close {
+	opacity: 1;
+	text-shadow: none;
+	padding: 0px !important;
+	margin-right: 5px !important;
+}
+
+#collaborator-search-result,
+#collaborator-result {
+	max-height: 240px;
+	overflow-y: auto;
+}
+
+.collaborator-card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 8px;
+	position: relative;
+	border: 1px solid transparent;
+}
+
+#collaborator-search-result .collaborator-card:hover {
+	border: 1px solid var(--action);
+	cursor: pointer;
+}
+
+.collaborator-card-image {
+	aspect-ratio: 1;
+	object-fit: cover;
+	width: 15%;
+	max-width: 65px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+.collaborator-card-detail {
+	flex: 1;
+}
+
+.collaborator-card-title {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+	color: var(--contrast);
+	width: fit-content;
+}
+
+#collaborator-result .collaborator-card-title:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.collaborator-card-plus {
+	position: relative;
+}
+
+.collaborator-card-plus button {
+	background: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+.seperation {
+	border: 2px solid var(--orange);
+	border-radius: var(--rounded1);
+	width: 70%;
+}
+
+#playlist-form input,
+#playlist-form input:focus,
+#collaborator-pseudo,
+#collaborator-pseudo:focus {
+	border-radius: 0;
+	background-color: var(--primary-secondary);
+	color: var(--contrast);
+}
+
+#playlist-form select,
+#playlist-form select option {
+	border-radius: 0;
+	background-color: var(--primary-secondary);
+	color: var(--contrast);
+}
+
+.checkWrap {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin: 8px 0px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.checkmark {
+	position: absolute;
+	top: 11px;
+	left: 6px;
+	height: 20px;
+	width: 20px;
+	background-color: var(--primary-secondary);
+	border-radius: 2px;
+	border: solid 1px var(--primary-secondary);
+}
+
+.checkWrap:hover input ~ .checkmark {
+	background-color: var(--primary-secondary);
+	border: solid 1px var(--primary-secondary);
+}
+
+.checkWrap input:checked ~ .checkmark {
+	background-color: var(--action);
+	border: var(--action);
+}
+
+.checkWrap .checkmark:after {
+	left: 7px;
+	top: 3px;
+	width: 6px;
+	height: 11px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.check-label-artist {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	float: left;
+}
+
+.check-label-artist:after {
+	content: '';
+}
+
+.checkWrap input ~ .check-label-artist {
+	color: var(--boolean-action);
+}
+
+.checkWrap input:checked ~ .check-label-artist {
+	color: black;
+}
+
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+
+.checkWrap input:checked ~ .checkmark:after {
+	display: block;
+}

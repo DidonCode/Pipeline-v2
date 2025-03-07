@@ -1,0 +1,31 @@
+name: TEST
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonage du dépôt
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Merge main => test
+        env:
+          GH_TOKEN: ${{ secrets.TOKEN_GITHUB }}
+        run: |
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}
+          
+          git checkout test
+          git fetch origin main
+          git merge origin/main
+          
+          git push origin test

@@ -1,0 +1,16 @@
+var searchData = [
+	['databaseartist_0', ['DatabaseArtist', ['../class_database_artist.html', 1, '']]],
+	['databaselike_1', ['DatabaseLike', ['../class_database_like.html', 1, '']]],
+	['databasemember_2', ['DatabaseMember', ['../class_database_member.html', 1, '']]],
+	['databaseplaylist_3', ['DatabasePlaylist', ['../class_database_playlist.html', 1, '']]],
+	['databasesound_4', ['DatabaseSound', ['../class_database_sound.html', 1, '']]],
+	['databaseuseraccount_5', ['DatabaseUserAccount', ['../class_database_user_account.html', 1, '']]],
+	['databaseuseractivity_6', ['DatabaseUserActivity', ['../class_database_user_activity.html', 1, '']]],
+	['databaseuserlike_7', ['DatabaseUserLike', ['../class_database_user_like.html', 1, '']]],
+	['databaseuserplaylist_8', ['DatabaseUserPlaylist', ['../class_database_user_playlist.html', 1, '']]],
+	['databaseusersound_9', ['DatabaseUserSound', ['../class_database_user_sound.html', 1, '']]],
+	['delete_10', ['delete', ['../class_database_user_playlist.html#ae4535f481e1a6835c7cffb9c25b07f3c', 1, 'DatabaseUserPlaylist\delete()'], ['../class_database_user_sound.html#a7e9d5303ae1ca52bbb80b78852f8df08', 1, 'DatabaseUserSound\delete()']]],
+	['disconnect_11', ['disconnect', ['../class_database_user_account.html#a21515cc2dddbbc2eee53df61073febcd', 1, 'DatabaseUserAccount']]],
+	['documentation_20api_20butify_12', ['Documentation API Butify', ['../index.html', 1, '']]],
+	['du_20projet_13', ['Présentation du projet', ['../index.html#intro_section', 1, '']]],
+];

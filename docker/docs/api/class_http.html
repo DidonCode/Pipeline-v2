@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=11" />
+		<meta name="generator" content="Doxygen 1.13.2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Butify: Référence de la classe Http</title>
+		<link rel="icon" href="logoButifyIcon.png" type="image/x-icon" />
+		<link href="tabs.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="dynsections.js"></script>
+		<script type="text/javascript" src="clipboard.js"></script>
+		<link href="navtree.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="navtreedata.js"></script>
+		<script type="text/javascript" src="navtree.js"></script>
+		<script type="text/javascript" src="resize.js"></script>
+		<script type="text/javascript" src="cookie.js"></script>
+		<link href="search/search.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="search/searchdata.js"></script>
+		<script type="text/javascript" src="search/search.js"></script>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				init_search();
+			});
+			/* @license-end */
+		</script>
+		<link href="doxygen.css" rel="stylesheet" type="text/css" />
+		<link href="doxygen-style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="top">
+			<!-- do not remove this div, it is closed by doxygen! -->
+			<div id="titlearea">
+				<table cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr id="projectrow">
+							<td id="projectlogo">
+								<img alt="Logo" src="logoButify (2).png" />
+							</td>
+							<td id="projectalign">
+								<div id="projectname">Butify</div>
+								<div id="projectbrief">Plateforme de musique</div>
+							</td>
+							<td>
+								<div id="MSearchBox" class="MSearchBoxInactive">
+									<span class="left">
+										<span id="MSearchSelect" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+										<input type="text" id="MSearchField" value="" placeholder="Recherche" accesskey="S" onfocus="searchBox.OnSearchFieldFocus(true)" onblur="searchBox.OnSearchFieldFocus(false)" onkeyup="searchBox.OnSearchFieldChange(event)" /> </span
+									><span class="right">
+										<a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt="" /></a>
+									</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- end header part -->
+			<!-- Généré par Doxygen 1.13.2 -->
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				var searchBox = new SearchBox('searchBox', 'search/', '.html');
+				/* @license-end */
+			</script>
+			<script type="text/javascript">
+				/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+				$(function () {
+					codefold.init(0);
+				});
+				/* @license-end */
+			</script>
+		</div>
+		<!-- top -->
+		<div id="side-nav" class="ui-resizable side-nav-resizable">
+			<div id="nav-tree">
+				<div id="nav-tree-contents">
+					<div id="nav-sync" class="sync"></div>
+				</div>
+			</div>
+			<div id="splitbar" style="-moz-user-select: none" class="ui-resizable-handle"></div>
+		</div>
+		<script type="text/javascript">
+			/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+			$(function () {
+				initNavTree('class_http.html', '');
+				initResizable(true);
+			});
+			/* @license-end */
+		</script>
+		<div id="doc-content">
+			<!-- window showing the filter options -->
+			<div id="MSearchSelectWindow" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()" onkeydown="return searchBox.OnSearchSelectKey(event)"></div>
+
+			<!-- iframe showing the search results (closed by default) -->
+			<div id="MSearchResultsWindow">
+				<div id="MSearchResults">
+					<div class="SRPage">
+						<div id="SRIndex">
+							<div id="SRResults"></div>
+							<div class="SRStatus" id="Loading">Chargement...</div>
+							<div class="SRStatus" id="Searching">Recherche...</div>
+							<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header">
+				<div class="summary">
+					<a href="#pub-static-methods">Fonctions membres publiques statiques</a>
+				</div>
+				<div class="headertitle">
+					<div class="title">Référence de la classe Http</div>
+				</div>
+			</div>
+			<!--header-->
+			<div class="contents">
+				<p>
+					Gère les renvois API.
+					<a href="#details">Plus de détails...</a>
+				</p>
+				<table class="memberdecls">
+					<tr class="heading">
+						<td colspan="2">
+							<h2 class="groupheader">
+								<a id="pub-static-methods" name="pub-static-methods"></a>
+								Fonctions membres publiques statiques
+							</h2>
+						</td>
+					</tr>
+					<tr class="memitem:a0c58835776e99221afea22234f39e493" id="r_a0c58835776e99221afea22234f39e493">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#a0c58835776e99221afea22234f39e493">sendResponse</a>
+							($statutCode, $data)
+						</td>
+					</tr>
+					<tr class="memdesc:a0c58835776e99221afea22234f39e493">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie une réponse http. <br /></td>
+					</tr>
+					<tr class="separator:a0c58835776e99221afea22234f39e493">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:ad7526be1fb367138f3082c4dd21a8b7b" id="r_ad7526be1fb367138f3082c4dd21a8b7b">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#ad7526be1fb367138f3082c4dd21a8b7b">sendError</a>
+							($exception)
+						</td>
+					</tr>
+					<tr class="memdesc:ad7526be1fb367138f3082c4dd21a8b7b">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie une erreur http. <br /></td>
+					</tr>
+					<tr class="separator:ad7526be1fb367138f3082c4dd21a8b7b">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+					<tr class="memitem:af1c11881c1270c6cffbb9559320e792c" id="r_af1c11881c1270c6cffbb9559320e792c">
+						<td class="memItemLeft" align="right" valign="top">static&#160;</td>
+						<td class="memItemRight" valign="bottom">
+							<a class="el" href="#af1c11881c1270c6cffbb9559320e792c">sendCustomError</a>
+							($exception, $exceptionCode)
+						</td>
+					</tr>
+					<tr class="memdesc:af1c11881c1270c6cffbb9559320e792c">
+						<td class="mdescLeft">&#160;</td>
+						<td class="mdescRight">Renvoie une erreur http. <br /></td>
+					</tr>
+					<tr class="separator:af1c11881c1270c6cffbb9559320e792c">
+						<td class="memSeparator" colspan="2">&#160;</td>
+					</tr>
+				</table>
+				<a name="details" id="details"></a>
+				<h2 class="groupheader">Description détaillée</h2>
+				<div class="textblock"><p>Gère les renvois API.</p></div>
+				<h2 class="groupheader">Documentation des fonctions membres</h2>
+				<a id="af1c11881c1270c6cffbb9559320e792c" name="af1c11881c1270c6cffbb9559320e792c"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#af1c11881c1270c6cffbb9559320e792c">&#9670;&#160;</a></span
+					>sendCustomError()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static sendCustomError</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$exception</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$exceptionCode</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie une erreur http.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$exception</td>
+										<td>Exception à renvoyer</td>
+									</tr>
+									<tr>
+										<td class="paramname">$exceptionCode</td>
+										<td>Code spécifique à renvoyer</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>void</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="ad7526be1fb367138f3082c4dd21a8b7b" name="ad7526be1fb367138f3082c4dd21a8b7b"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#ad7526be1fb367138f3082c4dd21a8b7b">&#9670;&#160;</a></span
+					>sendError()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static sendError</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$exception</em></span>
+											</td>
+											<td>)</td>
+											<td></td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie une erreur http.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$exception</td>
+										<td>Exception à renvoyer</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>void</dd>
+						</dl>
+					</div>
+				</div>
+				<a id="a0c58835776e99221afea22234f39e493" name="a0c58835776e99221afea22234f39e493"></a>
+				<h2 class="memtitle">
+					<span class="permalink"><a href="#a0c58835776e99221afea22234f39e493">&#9670;&#160;</a></span
+					>sendResponse()
+				</h2>
+
+				<div class="memitem">
+					<div class="memproto">
+						<table class="mlabels">
+							<tr>
+								<td class="mlabels-left">
+									<table class="memname">
+										<tr>
+											<td class="memname">static sendResponse</td>
+											<td>(</td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$statutCode</em></span
+												>,
+											</td>
+										</tr>
+										<tr>
+											<td class="paramkey"></td>
+											<td></td>
+											<td class="paramtype"></td>
+											<td class="paramname">
+												<span class="paramname"><em>$data</em></span
+												>&#160;)
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mlabels-right">
+									<span class="mlabels"><span class="mlabel static">static</span></span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="memdoc">
+						<p>Renvoie une réponse http.</p>
+						<dl class="params">
+							<dt>Paramètres</dt>
+							<dd>
+								<table class="params">
+									<tr>
+										<td class="paramname">$statutCode</td>
+										<td>Code de réponse http</td>
+									</tr>
+									<tr>
+										<td class="paramname">$data</td>
+										<td>Donnée à renvoyer</td>
+									</tr>
+								</table>
+							</dd>
+						</dl>
+						<dl class="section return">
+							<dt>Renvoie</dt>
+							<dd>void</dd>
+						</dl>
+					</div>
+				</div>
+				<hr />
+				La documentation de cette classe a été générée à partir du fichier suivant :
+				<ul>
+					<li>class/<a class="el" href="http_8php.html">http.php</a></li>
+				</ul>
+			</div>
+			<!-- contents -->
+		</div>
+		<!-- doc-content -->
+		<!-- start footer part -->
+		<div id="nav-path" class="navpath">
+			<!-- id is needed for treeview function! -->
+			<ul>
+				<li class="navelem">
+					<a class="el" href="class_http.html">Http</a>
+				</li>
+				<li class="footer">
+					Généré par
+					<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen" /></a>
+					1.13.2
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

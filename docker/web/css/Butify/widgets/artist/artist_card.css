@@ -1,0 +1,123 @@
+.artist-card {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 8px;
+	position: relative;
+	transition: box-shadow 0.3s ease;
+}
+
+.artist-card-colunm {
+	flex-direction: column;
+	width: fit-content;
+}
+
+.artist-card-image {
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 50%;
+	width: 100%;
+}
+
+.artist-card-image-container {
+	width: 15%;
+	max-width: 65px;
+	margin-right: 5px;
+	position: relative;
+}
+
+.artist-card-colunm .artist-card-image-container {
+	width: unset;
+	max-width: unset;
+	margin-right: unset;
+}
+
+.artist-card-colunm .artist-card-image {
+	height: 200px;
+	max-width: unset;
+	aspect-ratio: 1;
+	width: unset;
+	margin-right: 0;
+}
+
+.artist-card-image-skeleton {
+	display: none;
+}
+
+.artist-card-skeleton .artist-card-image {
+	display: none;
+}
+
+.artist-card-skeleton .artist-card-image-skeleton {
+	display: block;
+	animation: loading 1s infinite ease-in-out;
+	aspect-ratio: 1;
+	border-radius: 50% !important;
+}
+
+.artist-card-detail {
+	flex: 1;
+}
+
+.artist-card-colunm .artist-card-detail {
+	display: flex; /* width: 100%;*/
+}
+
+.artist-card-title {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+	color: var(--contrast);
+}
+
+.artist-card-colunm .artist-card-title {
+	text-transform: uppercase;
+	text-align: center;
+	margin: auto;
+}
+
+.artist-card-skeleton .artist-card-title {
+	animation: loading 1s infinite ease-in-out;
+}
+
+.artist-card-description {
+	font-size: 0.9rem;
+	color: var(--contrast);
+	margin: 0.25rem 0 0;
+}
+
+.artist-card-colunm .artist-card-description {
+	text-align: center;
+}
+
+.artist-card-plus {
+	position: relative;
+}
+
+.artist-card-plus button {
+	background: none;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin: 0 5px;
+}
+
+.artist-card-skeleton .artist-card-plus button,
+.artist-card-skeleton .artist-card-plus button i {
+	animation: loading 1s infinite ease-in-out;
+}
+
+.artist-card-badge {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	font-size: 1.3em;
+	color: var(--action);
+}
+
+.artist-card-colunm .artist-card-badge {
+	font-size: 1.8em;
+}

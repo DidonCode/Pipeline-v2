@@ -1,0 +1,179 @@
+.cards-container {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+.pricing-card {
+	color: var(--contrast);
+	width: 25%;
+	border-radius: 1.5em;
+	position: relative;
+	margin: 0px 35px;
+	text-align: center;
+	height: fit-content;
+	max-width: 350px;
+}
+
+.pricing-header {
+	position: absolute;
+	top: -25px;
+	width: 100%;
+}
+
+.pricing-title {
+	background-color: var(--secondary);
+	padding: 0px 15px;
+	width: fit-content;
+	margin: auto;
+}
+
+.pricing-body {
+	justify-items: center;
+}
+
+.pricing-price {
+	margin: 40px 0px 30px 0px;
+}
+
+.pricing-amount {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.currency {
+	position: absolute;
+	left: 0px;
+}
+
+.price-wrapper {
+	position: relative;
+	display: flex;
+	align-items: baseline;
+}
+
+.price {
+	margin: 0;
+}
+
+.decimal {
+	position: absolute;
+	right: -30px;
+	top: 3px;
+}
+
+.price-period {
+	margin: 0;
+}
+
+.pricing-button-wrapper {
+	margin: 30px 0px;
+	width: 100%;
+}
+
+.pricing-button-wrapper button {
+	font-weight: 500;
+	width: 45%;
+	text-transform: uppercase;
+}
+
+.pricing-options {
+	width: 100%;
+	text-align: center;
+}
+
+.options-title {
+	margin-bottom: 15px;
+}
+
+.options-list {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.options-list li {
+	padding: 5px;
+	font-weight: 500;
+}
+
+.options-list li:nth-child(odd) {
+	background-color: var(--primary-secondary);
+}
+
+.options-list li:last-child {
+	border-radius: 0 0 1.5em 1.5em;
+}
+
+#basic {
+	border: 2px solid #2ea148;
+}
+
+#basic .pricing-title {
+	color: #2ea148;
+}
+
+#free {
+	border: 2px solid #a17900;
+}
+
+#free .pricing-title {
+	color: #a17900;
+}
+
+#premium {
+	border: 2px solid #fbcc3f;
+	margin-top: -120px;
+	animation: moveUpDown 1.5s infinite alternate ease-in-out;
+}
+
+#premium .pricing-title {
+	color: #fbcc3f;
+}
+
+#subscription-loading {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #252525ab;
+}
+
+#subscription-loading div {
+	width: fit-content;
+	height: 100%;
+	margin: auto;
+	align-content: center;
+}
+
+#subscription-loading .loader {
+	width: 80px;
+	height: 80px;
+	border-width: 6px;
+}
+
+.sparkle {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: gold;
+	border-radius: 50%;
+	opacity: 1;
+	transition:
+		opacity 1s ease-out,
+		transform 1s ease-out;
+}
+
+@keyframes moveUpDown {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}

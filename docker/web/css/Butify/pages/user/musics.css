@@ -1,0 +1,20 @@
+#music-table th,
+#music-table td {
+	border: none;
+	border-top: none;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#music-table img {
+	width: 70px;
+	object-fit: cover;
+	aspect-ratio: 1;
+}
+
+#music-table button {
+	background-color: var(--error);
+}

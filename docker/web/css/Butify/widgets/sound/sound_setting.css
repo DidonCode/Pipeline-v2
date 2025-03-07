@@ -1,0 +1,16 @@
+#sound-setting-header {
+	background-color: var(--primary);
+	border-bottom: 1px solid var(--border);
+	display: flex;
+	justify-content: space-between;
+}
+
+#sound-setting .modal-body {
+	border-radius: 0 0 var(--rounded1) var(--rounded1);
+}
+
+#sound-setting-playlist {
+	background-color: var(--secondary);
+	max-height: 600px;
+	overflow-y: auto;
+}
