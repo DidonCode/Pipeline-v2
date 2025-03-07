@@ -5,7 +5,7 @@
     <text color="orange">BUTIFY</text>
 </p>
 <p align="center">
-    <text color="white">Plateforme de musi</text>
+    <text color="white">Plateforme de musique</text>
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0-orange">
