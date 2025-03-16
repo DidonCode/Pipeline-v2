@@ -33,7 +33,7 @@ jobs:
         run: git checkout stable
 
       - name: Récupérer l'image Docker de main
-        run: git checkout main -- butify.tar
+        run: git checkout main -- /docker/butify.tar
 
       - name: Commit et push uniquement l'image Docker
         run: |
