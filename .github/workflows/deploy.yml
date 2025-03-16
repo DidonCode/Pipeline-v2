@@ -45,6 +45,11 @@ jobs:
       - name: Basculer sur la branche stable
         run: git checkout stable
 
+      - name: Configurer Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
       - name: Commit et push uniquement l'image Docker
         run: |
           git add butify.tar
