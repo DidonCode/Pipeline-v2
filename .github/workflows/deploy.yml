@@ -45,9 +45,6 @@ jobs:
       - name: Basculer sur la branche stable
         run: git checkout stable
 
-      - name: Déplacer le fichier dans le bon emplacement
-        run: mv butify.tar butify.tar
-
       - name: Commit et push uniquement l'image Docker
         run: |
           git add butify.tar
