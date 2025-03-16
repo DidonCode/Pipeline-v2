@@ -41,14 +41,16 @@ jobs:
           git lfs install
           git lfs track "*.tar"
 
+      - name: Changement sur la branche stable
+        run: | 
+          git checkout stable
+          rm butify.tar
+
       - name: Téléchargement de l'image
         uses: actions/download-artifact@v4
         with:
           name: docker-image
           path: .
-
-      - name: Changement sur la branche stable
-        run: git checkout stable
 
       - name: Configurer Git
         run: |
