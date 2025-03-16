@@ -20,6 +20,12 @@ jobs:
       - name: Sauvegarde de l'image Docker
         run: docker save butify:latest -o butify.tar
 
+      - name: Stocker le fichier pour le job suivant
+        uses: actions/upload-artifact@v3
+        with:
+          name: docker-image
+          path: butify.tar
+
   commit-image-to-stable:
     needs: build
     runs-on: ubuntu-latest
@@ -29,11 +35,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Passage sur la branche stable
-        run: git checkout stable
+      - name: Télécharger l'image Docker sauvegardée
+        uses: actions/download-artifact@v3
+        with:
+          name: docker-image
 
-      - name: Récupérer l'image Docker de main
-        run: git checkout main -- /docker/butify.tar
+      - name: Passage sur la branche stable
+        run: |
+          git checkout stable
+          mv docker-image/monimage.tar monimage.tar
 
       - name: Commit et push uniquement l'image Docker
         run: |
