@@ -16,6 +16,30 @@ jobs:
       - name: Clonage du dépôt
         uses: actions/checkout@v3
 
-      - name: Build l'app
-        run: ""
+      - name: Construction de l'image Docker
+        run: docker build -t butify:latest ./docker
+
+      - name: Sauvegarde de l'image Docker
+        run: docker save butify:latest -o butify.tar
+
+  commit-image-to-stable:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonage du dépôt
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Passage sur la branche stable
+        run: git checkout stable
+
+      - name: Récupérer l'image Docker de main
+        run: git checkout main -- butify.tar
+
+      - name: Commit et push uniquement l'image Docker
+        run: |
+          git add butify.tar
+          git commit -m "Mise à jour de l'image Docker depuis main [skip ci]"
+          git push origin stable
 
