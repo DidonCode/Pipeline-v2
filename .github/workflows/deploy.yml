@@ -52,11 +52,6 @@ jobs:
           name: docker-image
           path: .
 
-      - name: Configurer Git
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
       - name: Commit et push de l'image
         run: |
           git add butify.tar
