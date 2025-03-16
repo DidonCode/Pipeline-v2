@@ -14,24 +14,20 @@ jobs:
       - name: Clonage du dépôt
         uses: actions/checkout@v3
 
-      - name: Installer Git LFS
-        run: |
-          git lfs install
-
       - name: Construction de l'image Docker
         run: docker build -t butify:latest ./docker
 
       - name: Sauvegarde de l'image Docker
         run: docker save butify:latest -o butify.tar
 
-      - name: Stocker l'image Docker pour le job suivant
+      - name: Stockage de l'image
         uses: actions/upload-artifact@v4
         with:
           name: docker-image
           path: butify.tar
           retention-days: 1
 
-  commit-image-to-stable:
+  commit-to-stable:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -40,18 +36,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Installer Git LFS
+      - name: Installation de Git LFS
         run: |
           git lfs install
           git lfs track "*.tar"
 
-      - name: Télécharger l'image Docker sauvegardée
+      - name: Téléchargement de l'image
         uses: actions/download-artifact@v4
         with:
           name: docker-image
           path: .
 
-      - name: Basculer sur la branche stable
+      - name: Changement sur la branche stable
         run: git checkout stable
 
       - name: Configurer Git
@@ -59,9 +55,9 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-      - name: Commit et push uniquement l'image Docker
+      - name: Commit et push de l'image
         run: |
           git add butify.tar
-          git commit -m "Mise à jour de l'image Docker depuis main [skip ci]"
+          git commit -m "Update stable docker image"
           git push origin stable
 
