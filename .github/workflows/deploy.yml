@@ -14,52 +14,14 @@ jobs:
       - name: Clonage du dépôt
         uses: actions/checkout@v3
 
+      - name: Connexion à Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+  
       - name: Construction de l'image Docker
         run: docker build -t butify:latest ./docker
 
-      - name: Sauvegarde de l'image Docker
-        run: docker save butify:latest -o butify.tar
-
-      - name: Stockage de l'image
-        uses: actions/upload-artifact@v4
-        with:
-          name: docker-image
-          path: butify.tar
-          retention-days: 1
-
-  commit-to-stable:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clonage du dépôt
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Installation de Git LFS
-        run: |
-          git lfs install
-          git lfs track "*.tar"
-
-      - name: Changement sur la branche stable
-        run: | 
-          git checkout stable
-          rm butify.tar
-
-      - name: Téléchargement de l'image
-        uses: actions/download-artifact@v4
-        with:
-          name: docker-image
-          path: .
-
-      - name: Configurer Git
-        run: |
-          git config user.name "Butify BOT"
-          git config user.email "bot@butify.com"
-
-      - name: Commit et push de l'image
-        run: |
-          git add butify.tar
-          git commit -m "Update stable docker image"
-          git push origin stable
-
+      - name: Publication de l'image Docker
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/butify:latest
