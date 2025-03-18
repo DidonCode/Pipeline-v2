@@ -16,7 +16,7 @@ function randomString(length) {
 }
 
 describe("Tests de l'API Butify (user)", () => {
-	const apiUrl = 'http://localhost:8080/';
+	const apiUrl = 'http://localhost:8082/';
 
 	let token = '';
 	let playlistId = 0;
