@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
   
       - name: Construction de l'image Docker
-        run: docker build -t butify:latest ./docker
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/butify:latest ./docker
 
       - name: Publication de l'image Docker
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/butify:latest
